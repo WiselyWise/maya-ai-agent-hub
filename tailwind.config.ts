@@ -173,7 +173,25 @@ export default {
 					'50%': {
 						opacity: 0.8
 					}
-				}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					},
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0'
+					},
+					'100%': {
+						opacity: '1'
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -181,6 +199,8 @@ export default {
 				'gradient-shift': 'gradient-shift 6s ease infinite',
 				'float': 'float 5s ease-in-out infinite',
 				'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+				'fade-in': 'fade-in 0.5s ease-out forwards',
 			},
 			boxShadow: {
 				glow: '0 0 20px rgba(122, 95, 255, 0.4)',

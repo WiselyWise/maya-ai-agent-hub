@@ -8,36 +8,39 @@ interface HeroProps {
   subtitle: string;
   ctaText?: string;
   ctaLink?: string;
+  accentWord?: string;
 }
 
 const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
   ctaText = "Get Started",
-  ctaLink = "#tools"
+  ctaLink = "#tools",
+  accentWord
 }) => {
-  return (
-    <div className="relative overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36 mt-16">
-      <div 
-        className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
-        aria-hidden="true"
-      >
-        <div className="relative h-full max-w-7xl mx-auto">
-          <div className="absolute left-0 h-72 w-72 blur-[100px] bg-purple-500/20 rounded-full animate-pulse-slow" />
-          <div className="absolute right-32 bottom-32 h-96 w-96 blur-[120px] bg-teal-500/20 rounded-full animate-pulse-slow" />
-          <div className="absolute right-10 top-10 h-64 w-64 blur-[80px] bg-coral-500/20 rounded-full animate-pulse-slow" />
-        </div>
-      </div>
+  // If accentWord is provided, replace it with a gradient version in the title
+  const formattedTitle = accentWord 
+    ? title.replace(accentWord, `<span class="text-gradient-mixed">${accentWord}</span>`)
+    : title;
 
+  return (
+    <div className="relative overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36 mt-12">
       <div className="relative px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <div className="backdrop-blur-[1px]">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-              <span className="text-gradient">{title}</span>
+            <span className="inline-flex items-center rounded-full bg-dark-700/70 px-3 py-1 text-sm font-medium text-white/80 backdrop-blur-sm ring-1 ring-inset ring-white/10 mb-6">
+              <Sparkles className="mr-1.5 h-3.5 w-3.5 text-purple-500" />
+              AI-Powered Tool for Business Professionals
+            </span>
+            
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl" 
+                dangerouslySetInnerHTML={{ __html: formattedTitle }}>
             </h1>
+            
             <p className="mt-6 text-lg leading-8 text-white/80">
               {subtitle}
             </p>
+            
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button 
                 asChild
@@ -49,6 +52,13 @@ const Hero: React.FC<HeroProps> = ({
                   {ctaText}
                 </a>
               </Button>
+              
+              <a 
+                href="#features" 
+                className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
+              >
+                Learn more →
+              </a>
             </div>
           </div>
         </div>

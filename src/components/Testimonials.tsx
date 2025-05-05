@@ -22,10 +22,10 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="py-16 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-800 opacity-50" />
       <div className="container px-4 mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">What Our Customers Say</h2>
+          <span className="text-sm font-medium text-coral-500 mb-3 block">TESTIMONIALS</span>
+          <h2 className="text-3xl font-bold text-white mb-4">What Our <span className="text-gradient-coral">Customers Say</span></h2>
           <p className="text-white/70 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what professionals like you have achieved using our AI tools.
           </p>
@@ -35,9 +35,12 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="glass-card rounded-2xl p-6 backdrop-blur-md relative"
+              className="glass-card rounded-2xl p-6 backdrop-blur-md relative hover:shadow-glow-coral hover:border-coral-500/30 transition-all duration-300"
             >
-              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
+              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-coral-500 to-transparent" />
+              <svg className="w-10 h-10 text-coral-500/30 mb-4" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.722 6.065c-5.598 0-10.178 4.58-10.178 10.178 0 5.598 4.58 10.178 10.178 10.178 5.598 0 10.178-4.58 10.178-10.178 0-5.598-4.58-10.178-10.178-10.178zM6.441 19.79c-1.966 0-3.559-1.593-3.559-3.559s1.593-3.559 3.559-3.559 3.559 1.593 3.559 3.559c0 1.966-1.593 3.559-3.559 3.559zM15.013 19.79c-1.966 0-3.559-1.593-3.559-3.559s1.593-3.559 3.559-3.559 3.559 1.593 3.559 3.559c0 1.966-1.593 3.559-3.559 3.559z" />
+              </svg>
               <div className="text-white/80 mb-6">
                 "{testimonial.content}"
               </div>

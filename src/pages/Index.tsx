@@ -76,15 +76,17 @@ const Index = () => {
       
       <Navbar />
       
-      <main className="min-h-screen bg-dark-800">
+      <main className="min-h-screen">
         <Hero 
           title="Supercharge Your Productivity with AI"
           subtitle="Our suite of AI-powered tools helps small business owners and busy executives automate routine tasks, enhance creativity, and make data-driven decisions."
+          accentWord="Productivity"
         />
         
         <section id="tools" className="py-20 container px-4 mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Our AI Tools</h2>
+            <span className="text-sm font-medium text-purple-500 mb-3 block">OUR TOOLSET</span>
+            <h2 className="text-3xl font-bold text-white mb-4">Our AI <span className="text-gradient-mixed">Tools</span></h2>
             <p className="text-white/70 max-w-2xl mx-auto">
               Explore our collection of specialized AI tools designed to solve specific business challenges.
             </p>
@@ -108,17 +110,18 @@ const Index = () => {
         
         <section className="py-16 container px-4 mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">How Our Tools Work</h2>
+            <span className="text-sm font-medium text-teal-500 mb-3 block">SIMPLE WORKFLOW</span>
+            <h2 className="text-3xl font-bold text-white mb-4">How Our <span className="text-gradient-teal">Tools Work</span></h2>
             <p className="text-white/70 max-w-2xl mx-auto">
               Our AI tools follow a simple, intuitive workflow designed for busy professionals.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 relative">
+            <div className="text-center p-6 relative glass-card rounded-2xl backdrop-blur-md">
               <div className="absolute top-12 left-full hidden md:block w-1/3 h-px bg-gradient-to-r from-purple-500 to-transparent z-10" />
               <div className="h-24 w-24 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-purple-500">1</span>
+                <span className="text-3xl font-bold text-gradient">1</span>
               </div>
               <h3 className="text-xl font-medium text-white mb-3">Select Your Tool</h3>
               <p className="text-white/70">
@@ -126,10 +129,10 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="text-center p-6 relative">
+            <div className="text-center p-6 relative glass-card rounded-2xl backdrop-blur-md">
               <div className="absolute top-12 left-full hidden md:block w-1/3 h-px bg-gradient-to-r from-teal-500 to-transparent z-10" />
               <div className="h-24 w-24 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-teal-500">2</span>
+                <span className="text-3xl font-bold text-gradient-teal">2</span>
               </div>
               <h3 className="text-xl font-medium text-white mb-3">Provide Input</h3>
               <p className="text-white/70">
@@ -137,9 +140,9 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="text-center p-6">
+            <div className="text-center p-6 glass-card rounded-2xl backdrop-blur-md">
               <div className="h-24 w-24 rounded-full bg-coral-500/10 border border-coral-500/30 flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-coral-500">3</span>
+                <span className="text-3xl font-bold text-gradient-coral">3</span>
               </div>
               <h3 className="text-xl font-medium text-white mb-3">Get Results</h3>
               <p className="text-white/70">

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Zap, Clock, Users } from 'lucide-react';
@@ -6,19 +7,19 @@ import { FeatureCardProps } from '@/types/feature-card';
 
 const features: Omit<FeatureCardProps, 'className'>[] = [
   {
-    name: 'Boost Productivity',
+    title: 'Boost Productivity',
     description: 'Our AI tools help you complete tasks in minutes that would normally take hours.',
     icon: <Zap className="h-6 w-6" />,
     iconColor: 'purple' as const,
   },
   {
-    name: 'Save Time',
+    title: 'Save Time',
     description: 'Streamline your workflow and eliminate repetitive tasks with our intelligent automation.',
     icon: <Clock className="h-6 w-6" />,
     iconColor: 'teal' as const,
   },
   {
-    name: 'Built for Teams',
+    title: 'Built for Teams',
     description: 'Collaborate seamlessly with your team members to achieve better results faster.',
     icon: <Users className="h-6 w-6" />,
     iconColor: 'coral' as const,
@@ -40,8 +41,8 @@ const FeatureSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature) => (
             <FeatureCard
-              key={feature.name}
-              title={feature.name}
+              key={feature.title}
+              title={feature.title}
               description={feature.description}
               icon={feature.icon}
               iconColor={feature.iconColor}

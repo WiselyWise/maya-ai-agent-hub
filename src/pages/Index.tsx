@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Presentation, Rocket, Lightbulb } from 'lucide-react';
+import { Presentation, Rocket, Lightbulb, Smile } from 'lucide-react';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -31,6 +31,13 @@ const agents = [
     icon: <Lightbulb className="h-6 w-6 text-white" />,
     slug: 'prompt-genius',
     gradient: 'from-coral-500 to-coral-600',
+  },
+  {
+    title: 'Meme Generator',
+    description: 'Create shareable, engaging memes in seconds with AI. Perfect for busy executives who want to connect with their audience through humor.',
+    icon: <Smile className="h-6 w-6 text-white" />,
+    slug: 'meme-generator',
+    gradient: 'from-purple-500 to-coral-600',
   },
 ];
 

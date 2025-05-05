@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import PresentationGenerator from "./pages/PresentationGenerator";
 import ViralPostGenerator from "./pages/ViralPostGenerator";
 import PromptGenius from "./pages/PromptGenius";
+import MemeGenerator from "./pages/MemeGenerator";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/presentation-generator" element={<PresentationGenerator />} />
           <Route path="/viral-post-generator" element={<ViralPostGenerator />} />
           <Route path="/prompt-genius" element={<PromptGenius />} />
+          <Route path="/meme-generator" element={<MemeGenerator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

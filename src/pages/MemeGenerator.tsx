@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import { Button } from '@/components/ui/button';
-import { Smile, Share, Download } from 'lucide-react';
+import { Smile, Share, Download, Presentation, Rocket, Lightbulb } from 'lucide-react';
 
 const MemeGenerator = () => {
   return (

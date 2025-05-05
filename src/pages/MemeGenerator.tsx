@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '@/components/Navbar';
@@ -15,7 +16,7 @@ const MemeGenerator = () => {
         <title>AI Meme Generator | Create Engaging Viral Memes for Business Marketing</title>
         <meta name="description" content="Transform your business messaging with our AI Meme Generator. Create professional, on-brand memes that engage your audience and save hours of creative time." />
         <meta name="keywords" content="ai meme generator, business memes, marketing memes, viral content creator, executive time-saving tools, social media content" />
-        <meta name="canonical" href="https://www.aipowerhouse.com/meme-generator" />
+        <link rel="canonical" href="https://www.aipowerhouse.com/meme-generator" />
         <script type="application/ld+json">
           {`
             {

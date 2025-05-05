@@ -1,13 +1,152 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { FilePresentation, Rocket, Lightbulb } from 'lucide-react';
+
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import AgentCard from '@/components/AgentCard';
+import Hero from '@/components/Hero';
+import FeatureSection from '@/components/FeatureSection';
+import Testimonials from '@/components/Testimonials';
+
+const agents = [
+  {
+    title: 'Presentation Generator',
+    description: 'Create professional presentations in minutes, not hours. Our AI tool automatically generates compelling slide decks based on your input.',
+    icon: <FilePresentation className="h-6 w-6 text-white" />,
+    slug: 'presentation-generator',
+    gradient: 'from-purple-500 to-purple-600',
+  },
+  {
+    title: 'Viral Post Generator',
+    description: 'Create engaging social media content that gets shared. Our AI analyzes top-performing posts to craft content that resonates with your audience.',
+    icon: <Rocket className="h-6 w-6 text-white" />,
+    slug: 'viral-post-generator',
+    gradient: 'from-teal-500 to-teal-600',
+  },
+  {
+    title: 'Prompt Genius',
+    description: 'Transform simple inputs into sophisticated AI prompts. Get better results from any AI system by leveraging proven prompt engineering frameworks.',
+    icon: <Lightbulb className="h-6 w-6 text-white" />,
+    slug: 'prompt-genius',
+    gradient: 'from-coral-500 to-coral-600',
+  },
+];
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>AI Powerhouse | AI Tools for Small Businesses and Busy Executives</title>
+        <meta name="description" content="Discover our suite of AI-powered productivity tools designed for small business owners and busy executives. Automate routine tasks and focus on strategic decisions." />
+        <meta name="keywords" content="ai tools, ai productivity, small business automation, ai for executives, business ai solutions, productivity tools" />
+        <link rel="canonical" href="https://www.aipowerhouse.com/" />
+        <meta property="og:title" content="AI Powerhouse | AI Tools for Small Businesses and Busy Executives" />
+        <meta property="og:description" content="Discover our suite of AI-powered productivity tools designed for small business owners and busy executives." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.aipowerhouse.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI Powerhouse | AI Tools for Small Businesses" />
+        <meta name="twitter:description" content="Discover our suite of AI-powered productivity tools designed for small business owners and busy executives." />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "AI Powerhouse",
+              "url": "https://www.aipowerhouse.com/",
+              "description": "AI-powered productivity tools designed for small business owners and busy executives.",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.aipowerhouse.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+      
+      <Navbar />
+      
+      <main className="min-h-screen bg-dark-800">
+        <Hero 
+          title="Supercharge Your Productivity with AI"
+          subtitle="Our suite of AI-powered tools helps small business owners and busy executives automate routine tasks, enhance creativity, and make data-driven decisions."
+        />
+        
+        <section id="tools" className="py-20 container px-4 mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Our AI Tools</h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              Explore our collection of specialized AI tools designed to solve specific business challenges.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {agents.map((agent) => (
+              <AgentCard 
+                key={agent.slug}
+                title={agent.title}
+                description={agent.description}
+                icon={agent.icon}
+                slug={agent.slug}
+                gradient={agent.gradient}
+              />
+            ))}
+          </div>
+        </section>
+        
+        <FeatureSection />
+        
+        <section className="py-16 container px-4 mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">How Our Tools Work</h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              Our AI tools follow a simple, intuitive workflow designed for busy professionals.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6 relative">
+              <div className="absolute top-12 left-full hidden md:block w-1/3 h-px bg-gradient-to-r from-purple-500 to-transparent z-10" />
+              <div className="h-24 w-24 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl font-bold text-purple-500">1</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-3">Select Your Tool</h3>
+              <p className="text-white/70">
+                Choose the AI tool that addresses your specific business need from our collection.
+              </p>
+            </div>
+            
+            <div className="text-center p-6 relative">
+              <div className="absolute top-12 left-full hidden md:block w-1/3 h-px bg-gradient-to-r from-teal-500 to-transparent z-10" />
+              <div className="h-24 w-24 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl font-bold text-teal-500">2</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-3">Provide Input</h3>
+              <p className="text-white/70">
+                Enter your requirements or content needs into our intuitive interface.
+              </p>
+            </div>
+            
+            <div className="text-center p-6">
+              <div className="h-24 w-24 rounded-full bg-coral-500/10 border border-coral-500/30 flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl font-bold text-coral-500">3</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-3">Get Results</h3>
+              <p className="text-white/70">
+                Receive AI-generated content, insights, or strategies ready for immediate use.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <Testimonials />
+      </main>
+      
+      <Footer />
+    </>
   );
 };
 

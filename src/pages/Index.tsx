@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { FilePresentation, Rocket, Lightbulb } from 'lucide-react';
+import { Presentation, Rocket, Lightbulb } from 'lucide-react';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -14,7 +14,7 @@ const agents = [
   {
     title: 'Presentation Generator',
     description: 'Create professional presentations in minutes, not hours. Our AI tool automatically generates compelling slide decks based on your input.',
-    icon: <FilePresentation className="h-6 w-6 text-white" />,
+    icon: <Presentation className="h-6 w-6 text-white" />,
     slug: 'presentation-generator',
     gradient: 'from-purple-500 to-purple-600',
   },

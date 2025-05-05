@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
-import { FilePresentation } from 'lucide-react';
+import { Presentation } from 'lucide-react';
 
 const PresentationGenerator = () => {
   return (
@@ -73,7 +73,7 @@ const PresentationGenerator = () => {
             
             <div className="w-full md:w-1/2 p-6 glass-card rounded-2xl">
               <div className="aspect-video bg-dark-900 rounded-xl flex items-center justify-center">
-                <FilePresentation className="h-16 w-16 text-purple-500" />
+                <Presentation className="h-16 w-16 text-purple-500" />
               </div>
             </div>
           </div>

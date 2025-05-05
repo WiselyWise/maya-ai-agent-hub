@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import { Button } from '@/components/ui/button';
-import { Smile, Presentation, Rocket, Lightbulb, Sparkles } from 'lucide-react';
+import { Smile, Presentation, Rocket, Lightbulb, Sparkles, Share, Download } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import FeatureCard from '@/components/FeatureCard';
 
@@ -15,7 +15,7 @@ const MemeGenerator = () => {
         <title>AI Meme Generator | Create Engaging Viral Memes for Business Marketing</title>
         <meta name="description" content="Transform your business messaging with our AI Meme Generator. Create professional, on-brand memes that engage your audience and save hours of creative time." />
         <meta name="keywords" content="ai meme generator, business memes, marketing memes, viral content creator, executive time-saving tools, social media content" />
-        <link rel="canonical" href="https://www.aipowerhouse.com/meme-generator" />
+        <meta name="canonical" href="https://www.aipowerhouse.com/meme-generator" />
         <script type="application/ld+json">
           {`
             {

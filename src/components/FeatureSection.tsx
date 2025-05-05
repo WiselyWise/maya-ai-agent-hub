@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Zap, Clock, Users } from 'lucide-react';
 import FeatureCard from './FeatureCard';
+import { FeatureCardProps } from '@/types/feature-card';
 
-const features = [
+const features: Omit<FeatureCardProps, 'className'>[] = [
   {
     name: 'Boost Productivity',
     description: 'Our AI tools help you complete tasks in minutes that would normally take hours.',

@@ -1,14 +1,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-
-interface FeatureCardProps {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-  iconColor?: 'purple' | 'teal' | 'coral';
-  className?: string;
-}
+import { FeatureCardProps } from '@/types/feature-card';
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ 
   title, 

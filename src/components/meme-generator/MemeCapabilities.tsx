@@ -2,8 +2,30 @@
 import React from 'react';
 import FeatureCard from '@/components/FeatureCard';
 import { Sparkles, Share, Download } from 'lucide-react';
+import { FeatureCardProps } from '@/types/feature-card';
 
 const MemeCapabilities = () => {
+  const capabilities: Omit<FeatureCardProps, 'className'>[] = [
+    {
+      title: "Lightning Fast",
+      description: "Generate custom memes in seconds, not minutes. Our AI works at the speed of your creativity.",
+      icon: <Sparkles className="h-6 w-6" />,
+      iconColor: "purple"
+    },
+    {
+      title: "Extensive Templates",
+      description: "Access thousands of classic and trending meme templates all in one place.",
+      icon: <Share className="h-6 w-6" />,
+      iconColor: "teal"
+    },
+    {
+      title: "Style Customization",
+      description: "Adjust fonts, colors, and layouts to make your memes truly unique and personal.",
+      icon: <Download className="h-6 w-6" />,
+      iconColor: "coral"
+    }
+  ];
+
   return (
     <div id="features" className="container px-4 mx-auto py-16">
       <div className="text-center mb-12">
@@ -18,26 +40,12 @@ const MemeCapabilities = () => {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <FeatureCard 
-          title="Lightning Fast"
-          description="Generate custom memes in seconds, not minutes. Our AI works at the speed of your creativity."
-          icon={<Sparkles className="h-6 w-6" />}
-          iconColor="purple"
-        />
-        
-        <FeatureCard 
-          title="Extensive Templates"
-          description="Access thousands of classic and trending meme templates all in one place."
-          icon={<Share className="h-6 w-6" />}
-          iconColor="teal"
-        />
-        
-        <FeatureCard 
-          title="Style Customization"
-          description="Adjust fonts, colors, and layouts to make your memes truly unique and personal."
-          icon={<Download className="h-6 w-6" />}
-          iconColor="coral"
-        />
+        {capabilities.map((capability) => (
+          <FeatureCard
+            key={capability.title}
+            {...capability}
+          />
+        ))}
       </div>
     </div>
   );

@@ -5,10 +5,10 @@ const HowItWorks = () => {
   return (
     <div className="container px-4 mx-auto py-16">
       <div className="text-center mb-12">
-        <span className="text-sm font-medium text-coral-500 mb-3 block">HOW IT WORKS</span>
-        <h2 className="text-3xl font-bold text-white mb-4">Create in Three Simple Steps</h2>
+        <span className="text-sm font-medium text-coral-500 mb-3 block">STREAMLINED WORKFLOW</span>
+        <h2 className="text-3xl font-bold text-white mb-4">Busy Executive's 30-Second Process</h2>
         <p className="text-white/70 max-w-2xl mx-auto">
-          Creating viral-worthy memes has never been easier. Our AI takes care of all the hard work.
+          Our AI meme generator is designed for busy professionals who need results fast. No learning curve, no wasted time.
         </p>
       </div>
       
@@ -18,9 +18,9 @@ const HowItWorks = () => {
           <div className="h-24 w-24 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mx-auto mb-6">
             <span className="text-3xl font-bold text-gradient">1</span>
           </div>
-          <h3 className="text-xl font-medium text-white mb-3">Enter your idea</h3>
+          <h3 className="text-xl font-medium text-white mb-3">Input Business Context</h3>
           <p className="text-white/70">
-            Type in what you want your meme to be about. A business joke, industry trend, or clever observation.
+            Describe your business situation, industry trend, or company joke - no need to be creative, our AI handles that.
           </p>
         </div>
         
@@ -29,9 +29,9 @@ const HowItWorks = () => {
           <div className="h-24 w-24 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center mx-auto mb-6">
             <span className="text-3xl font-bold text-gradient-teal">2</span>
           </div>
-          <h3 className="text-xl font-medium text-white mb-3">Choose a style</h3>
+          <h3 className="text-xl font-medium text-white mb-3">Select Target Platform</h3>
           <p className="text-white/70">
-            Select from various meme formats and styles, from classic templates to modern designs.
+            Choose whether it's for LinkedIn, team communication, client emails, or any other business channel.
           </p>
         </div>
         
@@ -39,9 +39,9 @@ const HowItWorks = () => {
           <div className="h-24 w-24 rounded-full bg-coral-500/10 border border-coral-500/30 flex items-center justify-center mx-auto mb-6">
             <span className="text-3xl font-bold text-gradient-coral">3</span>
           </div>
-          <h3 className="text-xl font-medium text-white mb-3">Download & share</h3>
+          <h3 className="text-xl font-medium text-white mb-3">Share & Track Results</h3>
           <p className="text-white/70">
-            Instantly get your custom meme to use in your marketing, social media, or internal communications.
+            Download or share your professionally generated meme directly from our platform and track engagement.
           </p>
         </div>
       </div>

@@ -5,11 +5,11 @@ import Hero from '@/components/Hero';
 const MemeHero = () => {
   return (
     <Hero 
-      title="Generate Hilarious Memes with AI in Seconds"
-      subtitle="Transform your ideas into viral-worthy content instantly. Our AI tool helps busy professionals create engaging memes that boost social media presence and connect with audiences."
-      ctaText="Create Your First Meme"
-      ctaLink="#create"
-      accentWord="Memes"
+      title="AI Meme Generator for Business Marketing Strategy & Social Growth"
+      subtitle="Transform your business communication in seconds. Our AI tool helps busy executives and small business owners create engaging memes that boost social media presence, save precious time, and connect with modern audiences."
+      ctaText="Try for Free"
+      ctaLink="https://app.smartmaya.ai"
+      accentWord="Business"
     />
   );
 };

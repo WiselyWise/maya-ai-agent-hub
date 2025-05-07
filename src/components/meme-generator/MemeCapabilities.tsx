@@ -1,27 +1,27 @@
 
 import React from 'react';
 import FeatureCard from '@/components/FeatureCard';
-import { Sparkles, Share, Download } from 'lucide-react';
+import { Clock, TrendingUp, MessageSquare } from 'lucide-react';
 import { FeatureCardProps } from '@/types/feature-card';
 
 const MemeCapabilities = () => {
   const capabilities: Omit<FeatureCardProps, 'className'>[] = [
     {
-      title: "Lightning Fast",
-      description: "Generate custom memes in seconds, not minutes. Our AI works at the speed of your creativity.",
-      icon: <Sparkles className="h-6 w-6" />,
+      title: "Rapid Content Creation",
+      description: "Generate custom business memes in seconds, not days. Our AI works at the speed executives demand.",
+      icon: <Clock className="h-6 w-6" />,
       iconColor: "purple"
     },
     {
-      title: "Extensive Templates",
-      description: "Access thousands of classic and trending meme templates all in one place.",
-      icon: <Share className="h-6 w-6" />,
+      title: "Growth-Focused Content",
+      description: "Create memes proven to increase engagement metrics across LinkedIn, Twitter, and other B2B platforms.",
+      icon: <TrendingUp className="h-6 w-6" />,
       iconColor: "teal"
     },
     {
-      title: "Style Customization",
-      description: "Adjust fonts, colors, and layouts to make your memes truly unique and personal.",
-      icon: <Download className="h-6 w-6" />,
+      title: "Brand Voice Compatible",
+      description: "AI technology that adapts to your brand voice and industry, ensuring professional yet engaging content.",
+      icon: <MessageSquare className="h-6 w-6" />,
       iconColor: "coral"
     }
   ];
@@ -29,13 +29,13 @@ const MemeCapabilities = () => {
   return (
     <div id="features" className="container px-4 mx-auto py-16">
       <div className="text-center mb-12">
-        <span className="text-sm font-medium text-teal-500 mb-3 block">EVERYTHING YOU NEED</span>
+        <span className="text-sm font-medium text-teal-500 mb-3 block">BUSINESS SOLUTION</span>
         <h2 className="text-3xl font-bold text-white mb-4">
-          <span className="text-white">Everything You Need for </span>
-          <span className="text-gradient-mixed">Epic Memes</span>
+          <span className="text-white">Enterprise-Grade </span>
+          <span className="text-gradient-mixed">Meme Marketing</span>
         </h2>
         <p className="text-white/70 max-w-2xl mx-auto">
-          Our AI-powered platform gives you all the tools to create viral-worthy content in seconds
+          Our AI-powered platform gives busy executives and small business owners all the tools needed to create viral-worthy content without sacrificing professionalism
         </p>
       </div>
       

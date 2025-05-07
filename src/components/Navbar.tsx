@@ -2,7 +2,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, ChevronDown } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navbar = () => {
   return (
@@ -19,21 +25,53 @@ const Navbar = () => {
           <a href="https://smartmaya.ai" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
             Home
           </a>
-          <Link to="/presentation-generator" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
-            Presentation Generator
-          </Link>
-          <Link to="/viral-post-generator" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
-            Viral Post Generator
-          </Link>
-          <Link to="/prompt-genius" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
-            Prompt Genius
-          </Link>
+          
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-white/80 hover:text-white transition-colors focus:outline-none">
+              AI Tools <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-dark-700 border border-white/10 text-white">
+              <DropdownMenuItem asChild>
+                <Link to="/presentation-generator" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-purple-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-purple-400" />
+                  </span>
+                  Presentations
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/viral-post-generator" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-teal-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-teal-400" />
+                  </span>
+                  Viral Posts
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/prompt-genius" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-coral-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-coral-400" />
+                  </span>
+                  Prompt Genius
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/meme-generator" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-purple-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-purple-400" />
+                  </span>
+                  Meme Generator
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
         <div className="flex items-center gap-4">
           <Button 
             className="bg-gradient-to-r from-purple-500 to-purple-700 text-white hover:shadow-glow transition-all duration-300"
+            asChild
           >
-            Get Started
+            <a href="https://app.smartmaya.ai">Try for Free</a>
           </Button>
         </div>
       </div>

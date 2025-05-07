@@ -10,6 +10,7 @@ import ViralHowItWorks from '@/components/viral-post-generator/ViralHowItWorks';
 import ViralCreator from '@/components/viral-post-generator/ViralCreator';
 import ViralFAQ from '@/components/viral-post-generator/ViralFAQ';
 import ViralRelatedTools from '@/components/viral-post-generator/ViralRelatedTools';
+import ViralDemo from '@/components/viral-post-generator/ViralDemo';
 import Testimonials from '@/components/Testimonials';
 
 const ViralPostGenerator = () => {
@@ -50,6 +51,7 @@ const ViralPostGenerator = () => {
       <main className="min-h-screen">
         <ViralHero />
         <ViralFeatures />
+        <ViralDemo />
         <ViralCapabilities />
         <ViralHowItWorks />
         <ViralCreator />

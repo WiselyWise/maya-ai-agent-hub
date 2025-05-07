@@ -6,9 +6,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const PromptCreator = () => {
   return (
-    <div id="create" className="container px-4 mx-auto py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-white mb-4">
+    <div id="create" className="container px-4 mx-auto py-8">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-white mb-3">
           <span className="text-gradient">Business Prompt Engine</span>
         </h2>
         <p className="text-white/70 max-w-2xl mx-auto">

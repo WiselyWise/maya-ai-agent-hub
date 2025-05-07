@@ -10,6 +10,7 @@ import PresentationHowItWorks from '@/components/presentation-generator/Presenta
 import PresentationCreator from '@/components/presentation-generator/PresentationCreator';
 import PresentationFAQ from '@/components/presentation-generator/PresentationFAQ';
 import PresentationRelatedTools from '@/components/presentation-generator/PresentationRelatedTools';
+import PresentationDemo from '@/components/presentation-generator/PresentationDemo';
 import Testimonials from '@/components/Testimonials';
 
 const PresentationGenerator = () => {
@@ -50,6 +51,7 @@ const PresentationGenerator = () => {
       <main className="min-h-screen">
         <PresentationHero />
         <PresentationFeatures />
+        <PresentationDemo />
         <PresentationCapabilities />
         <PresentationHowItWorks />
         <PresentationCreator />

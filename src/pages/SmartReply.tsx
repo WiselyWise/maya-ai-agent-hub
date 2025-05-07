@@ -10,6 +10,7 @@ import SmartReplyHowItWorks from '@/components/smart-reply/SmartReplyHowItWorks'
 import SmartReplyCreator from '@/components/smart-reply/SmartReplyCreator';
 import SmartReplyFAQ from '@/components/smart-reply/SmartReplyFAQ';
 import SmartReplyRelatedTools from '@/components/smart-reply/SmartReplyRelatedTools';
+import SmartReplyDemo from '@/components/smart-reply/SmartReplyDemo';
 import Testimonials from '@/components/Testimonials';
 
 const SmartReply = () => {
@@ -50,6 +51,7 @@ const SmartReply = () => {
       <main className="min-h-screen">
         <SmartReplyHero />
         <SmartReplyFeatures />
+        <SmartReplyDemo />
         <SmartReplyCapabilities />
         <SmartReplyHowItWorks />
         <SmartReplyCreator />

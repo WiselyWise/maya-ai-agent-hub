@@ -61,6 +61,14 @@ const Navbar = () => {
                   Meme Generator
                 </Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/smart-reply" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-teal-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-teal-400" />
+                  </span>
+                  Smart Reply
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>

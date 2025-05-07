@@ -27,9 +27,9 @@ const PromptCapabilities = () => {
   ];
 
   return (
-    <div id="features" className="container mx-auto py-16">
-      <div className="text-center mb-12">
-        <span className="text-sm font-medium text-teal-500 mb-4 block">BUSINESS SOLUTION</span>
+    <div id="features" className="container mx-auto py-8">
+      <div className="text-center mb-8">
+        <span className="text-sm font-medium text-teal-500 mb-3 block">BUSINESS SOLUTION</span>
         <h2 className="text-white">
           <span className="text-white">Enterprise-Grade </span>
           <span className="text-gradient-mixed">Prompt Engineering</span>
@@ -39,7 +39,7 @@ const PromptCapabilities = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {capabilities.map((capability) => (
           <FeatureCard
             key={capability.title}

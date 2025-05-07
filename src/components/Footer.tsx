@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Facebook, Twitter, Instagram, Linkedin, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-900 border-t border-white/10 py-12 mt-16">
+    <footer className="bg-dark-900 border-t border-white/10 py-8 mt-8">
       <div className="container px-4 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Sparkles className="h-6 w-6 text-purple-500" />
@@ -19,8 +19,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-sm font-medium text-white mb-4">AI Tools</h3>
-            <ul className="space-y-3">
+            <h3 className="text-sm font-medium text-white mb-3">AI Tools</h3>
+            <ul className="space-y-2">
               <li>
                 <Link to="/presentation-generator" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   Presentation Generator
@@ -50,8 +50,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-sm font-medium text-white mb-4">Company</h3>
-            <ul className="space-y-3">
+            <h3 className="text-sm font-medium text-white mb-3">Company</h3>
+            <ul className="space-y-2">
               <li>
                 <a href="https://wiselywise.com/about-us/" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   About Us
@@ -66,8 +66,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-sm font-medium text-white mb-4">Resources</h3>
-            <ul className="space-y-3">
+            <h3 className="text-sm font-medium text-white mb-3">Resources</h3>
+            <ul className="space-y-2">
               <li>
                 <a href="https://maya-ai.gitbook.io/maya" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   Help Center
@@ -92,25 +92,13 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-white/10 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
             © 2025 Maya AI. All rights reserved.
           </p>
           
-          <div className="flex items-center space-x-4">
-            <a href="https://facebook.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="Facebook">
-              <Facebook size={18} />
-            </a>
-            <a href="https://twitter.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="Twitter">
-              <Twitter size={18} />
-            </a>
-            <a href="https://instagram.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="Instagram">
-              <Instagram size={18} />
-            </a>
-            <a href="https://linkedin.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="LinkedIn">
-              <Linkedin size={18} />
-            </a>
-            <a href="https://app.smartmaya.ai" className="ml-4 inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors">
+          <div className="flex items-center">
+            <a href="https://app.smartmaya.ai" className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors">
               Get Started <ArrowRight size={16} className="ml-1" />
             </a>
           </div>

@@ -10,6 +10,7 @@ import HowItWorks from '@/components/meme-generator/HowItWorks';
 import MemeCreator from '@/components/meme-generator/MemeCreator';
 import FAQ from '@/components/meme-generator/FAQ';
 import RelatedTools from '@/components/meme-generator/RelatedTools';
+import MemeDemo from '@/components/meme-generator/MemeDemo';
 import Testimonials from '@/components/Testimonials';
 
 const MemeGenerator = () => {
@@ -50,6 +51,7 @@ const MemeGenerator = () => {
       <main className="min-h-screen">
         <MemeHero />
         <MemeFeatures />
+        <MemeDemo />
         <MemeCapabilities />
         <HowItWorks />
         <MemeCreator />

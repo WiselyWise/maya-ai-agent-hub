@@ -32,10 +32,10 @@ const SmartReplyFAQ = () => {
   ];
 
   return (
-    <section id="faq" className="container mx-auto py-16 px-4">
-      <div className="text-center mb-12">
+    <section id="faq" className="container mx-auto py-8 px-4">
+      <div className="text-center mb-8">
         <span className="text-sm font-medium text-purple-500 mb-3 block">FAQ</span>
-        <h2 className="text-3xl font-bold text-white mb-4">Frequently Asked <span className="text-gradient">Questions</span></h2>
+        <h2 className="text-3xl font-bold text-white mb-3">Frequently Asked <span className="text-gradient">Questions</span></h2>
         <p className="text-white/70 max-w-2xl mx-auto">
           Everything you need to know about our Smart Reply AI tool and how it can transform your customer communications.
         </p>

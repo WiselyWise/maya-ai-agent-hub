@@ -10,6 +10,7 @@ import PromptHowItWorks from '@/components/prompt-genius/PromptHowItWorks';
 import PromptCreator from '@/components/prompt-genius/PromptCreator';
 import PromptFAQ from '@/components/prompt-genius/PromptFAQ';
 import PromptRelatedTools from '@/components/prompt-genius/PromptRelatedTools';
+import PromptDemo from '@/components/prompt-genius/PromptDemo';
 import Testimonials from '@/components/Testimonials';
 
 const PromptGenius = () => {
@@ -50,6 +51,7 @@ const PromptGenius = () => {
       <main className="min-h-screen">
         <PromptHero />
         <PromptFeatures />
+        <PromptDemo />
         <PromptCapabilities />
         <PromptHowItWorks />
         <PromptCreator />

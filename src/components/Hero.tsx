@@ -8,17 +8,19 @@ interface HeroProps {
   ctaText?: string;
   ctaLink?: string;
   accentWord?: string;
+  className?: string;
 }
 const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
   ctaText = "Try for Free",
   ctaLink = "https://app.smartmaya.ai",
-  accentWord
+  accentWord,
+  className = ""
 }) => {
   // If accentWord is provided, replace it with a gradient version in the title
   const formattedTitle = accentWord ? title.replace(accentWord, `<span class="text-gradient-mixed">${accentWord}</span>`) : title;
-  return <div className="relative overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36 mt-12">
+  return <div className={`relative overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36 mt-12 ${className}`}>
       <div className="relative px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <div className="backdrop-blur-[1px]">

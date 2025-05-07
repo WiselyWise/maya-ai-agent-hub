@@ -3,11 +3,16 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sparkles, ChevronDown } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+
 const Navbar = () => {
   return <header className="w-full border-b border-white/10 bg-dark-800/80 backdrop-blur-md fixed top-0 z-50">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center gap-2 text-xl font-medium">
-          <Sparkles className="h-6 w-6 text-purple-500" />
+          <img 
+            src="/lovable-uploads/de824123-311a-4de4-be8e-689bdc8c4ac1.png" 
+            alt="Maya Logo" 
+            className="h-9 w-9"
+          />
           <span className="text-gradient font-bold">Maya AI Agent Hub</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">

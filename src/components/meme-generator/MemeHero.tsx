@@ -10,6 +10,7 @@ const MemeHero = () => {
       ctaText="Try for Free"
       ctaLink="https://app.smartmaya.ai"
       accentWord="Business"
+      className="text-hero"
     />
   );
 };

@@ -95,7 +95,7 @@
     @apply bg-dark-800 text-foreground antialiased;
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.02em;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .glass-card {
@@ -153,5 +153,18 @@
   
   .neo-card {
     @apply glass-card rounded-2xl transition-all duration-300 hover:translate-y-[-5px] hover:shadow-glow;
+  }
+
+  /* Improved text spacing */
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight leading-tight;
+  }
+  
+  p {
+    @apply tracking-normal leading-relaxed;
+  }
+  
+  .text-hero p {
+    @apply tracking-normal leading-relaxed max-w-3xl mx-auto;
   }
 }

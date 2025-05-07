@@ -30,11 +30,11 @@ const MemeCapabilities = () => {
     <div id="features" className="container px-4 mx-auto py-16">
       <div className="text-center mb-12">
         <span className="text-sm font-medium text-teal-500 mb-3 block">BUSINESS SOLUTION</span>
-        <h2 className="text-3xl font-bold text-white mb-4">
+        <h2 className="text-3xl font-bold text-white mb-4 tracking-tight leading-tight">
           <span className="text-white">Enterprise-Grade </span>
           <span className="text-gradient-mixed">Meme Marketing</span>
         </h2>
-        <p className="text-white/70 max-w-2xl mx-auto">
+        <p className="text-white/70 max-w-2xl mx-auto tracking-normal leading-relaxed">
           Our AI-powered platform gives busy executives and small business owners all the tools needed to create viral-worthy content without sacrificing professionalism
         </p>
       </div>
@@ -44,6 +44,7 @@ const MemeCapabilities = () => {
           <FeatureCard
             key={capability.title}
             {...capability}
+            className="tracking-normal"
           />
         ))}
       </div>

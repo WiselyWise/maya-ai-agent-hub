@@ -1,17 +1,14 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-dark-900 border-t border-white/10 py-12 mt-16">
+  return <footer className="bg-dark-900 border-t border-white/10 py-12 mt-16">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Sparkles className="h-6 w-6 text-purple-500" />
-              <span className="text-gradient text-xl font-bold">AI Powerhouse</span>
+              <span className="text-gradient text-xl font-bold">Maya AI Agent Hub</span>
             </div>
             <p className="text-white/70 text-sm">
               Enhance your productivity with our suite of AI-powered tools designed for small businesses and busy executives.
@@ -83,24 +80,10 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-white/50">
-            © {new Date().getFullYear()} AI Powerhouse. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-white/50 hover:text-purple-400 transition-colors">
-              Twitter
-            </a>
-            <a href="#" className="text-white/50 hover:text-purple-400 transition-colors">
-              LinkedIn
-            </a>
-            <a href="#" className="text-white/50 hover:text-purple-400 transition-colors">
-              Facebook
-            </a>
-          </div>
+          
+          
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

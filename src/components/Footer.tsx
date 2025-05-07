@@ -1,8 +1,11 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Facebook, Twitter, Instagram, Linkedin, ArrowRight } from 'lucide-react';
+
 const Footer = () => {
-  return <footer className="bg-dark-900 border-t border-white/10 py-12 mt-16">
+  return (
+    <footer className="bg-dark-900 border-t border-white/10 py-12 mt-16">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -33,25 +36,9 @@ const Footer = () => {
                   Prompt Genius
                 </Link>
               </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-sm font-medium text-white mb-4">Resources</h3>
-            <ul className="space-y-3">
               <li>
-                <Link to="/blog" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/use-cases" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
-                  Use Cases
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
-                  FAQ
+                <Link to="/meme-generator" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Meme Generator
                 </Link>
               </li>
             </ul>
@@ -66,8 +53,29 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
-                  Contact
+                <Link to="/pricing" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <a href="https://smartmaya.ai/blog" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <Link to="/careers" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Careers
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-sm font-medium text-white mb-4">Resources</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/help-center" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Help Center
                 </Link>
               </li>
               <li>
@@ -75,15 +83,46 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link to="/terms" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-white/50 text-sm mb-4 md:mb-0">
+            © 2025 Maya AI. All rights reserved.
+          </p>
           
-          
+          <div className="flex items-center space-x-4">
+            <a href="https://facebook.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="Facebook">
+              <Facebook size={18} />
+            </a>
+            <a href="https://twitter.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="Twitter">
+              <Twitter size={18} />
+            </a>
+            <a href="https://instagram.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="Instagram">
+              <Instagram size={18} />
+            </a>
+            <a href="https://linkedin.com" className="text-white/70 hover:text-purple-400 transition-colors" aria-label="LinkedIn">
+              <Linkedin size={18} />
+            </a>
+            <a href="https://app.smartmaya.ai" className="ml-4 inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors">
+              Get Started <ArrowRight size={16} className="ml-1" />
+            </a>
+          </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

@@ -48,24 +48,14 @@ const Footer = () => {
             <h3 className="text-sm font-medium text-white mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/about" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                <a href="https://wiselywise.com/about-us/" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/pricing" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <a href="https://smartmaya.ai/blog" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
-                  Blog
                 </a>
               </li>
               <li>
-                <Link to="/careers" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
-                  Careers
-                </Link>
+                <a href="https://smartmaya.ai/customer-success-hub/" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Customer Success Hub
+                </a>
               </li>
             </ul>
           </div>
@@ -74,24 +64,24 @@ const Footer = () => {
             <h3 className="text-sm font-medium text-white mb-4">Resources</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/help-center" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                <a href="https://maya-ai.gitbook.io/maya" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   Help Center
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/privacy-policy" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                <a href="https://wiselywise.com/privacy-policy/" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   Privacy Policy
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/terms" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                <a href="https://wiselywise.com/termsofservice/" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   Terms of Service
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                <a href="https://smartmaya.ai/contact-us/" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   Contact Us
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

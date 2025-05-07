@@ -18,19 +18,19 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 
   return (
     <div className={cn(
-      "neo-card group p-6 hover:border-white/20",
+      "neo-card group hover:border-white/20",
       className
     )}>
       <div className={cn(
-        "feature-icon mb-5",
+        "feature-icon mb-6",
         iconColors[iconColor]
       )}>
         {icon}
       </div>
       
-      <h3 className="text-xl font-medium text-white mb-3">{title}</h3>
+      <h3 className="text-white">{title}</h3>
       
-      <p className="text-white/70">{description}</p>
+      <p className="text-white/70 mt-4">{description}</p>
     </div>
   );
 };

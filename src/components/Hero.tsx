@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Sparkles } from 'lucide-react';
+
 interface HeroProps {
   title: string;
   subtitle: string;
@@ -10,6 +11,7 @@ interface HeroProps {
   accentWord?: string;
   className?: string;
 }
+
 const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
@@ -20,23 +22,24 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   // If accentWord is provided, replace it with a gradient version in the title
   const formattedTitle = accentWord ? title.replace(accentWord, `<span class="text-gradient-mixed">${accentWord}</span>`) : title;
-  return <div className={`relative overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36 mt-12 ${className}`}>
+  
+  return (
+    <div className={`relative overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36 mt-12 ${className}`}>
       <div className="relative px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <div className="backdrop-blur-[1px]">
-            <span className="inline-flex items-center rounded-full bg-dark-700/70 px-3 py-1 text-sm font-medium text-white/80 backdrop-blur-sm ring-1 ring-inset ring-white/10 mb-6">
-              <Sparkles className="mr-1.5 h-3.5 w-3.5 text-purple-500" />
+            <span className="inline-flex items-center rounded-full bg-dark-700/70 px-3 py-1.5 text-sm font-medium text-white/80 backdrop-blur-sm ring-1 ring-inset ring-white/10 mb-8">
+              <Sparkles className="mr-2 h-3.5 w-3.5 text-purple-500" />
               AI-Powered Business Marketing Tool
             </span>
             
             <h1 
-              className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl tracking-[-0.02em] leading-tight" 
-              style={{ fontFamily: 'DM Sans, sans-serif', letterSpacing: '-2px', lineHeight: '1.4' }} 
+              className="font-bold text-white" 
               dangerouslySetInnerHTML={{__html: formattedTitle}}
             >
             </h1>
             
-            <p className="mt-6 text-lg leading-8 text-white/80" style={{ fontFamily: 'DM Sans, sans-serif', letterSpacing: '-2px', lineHeight: '1.4' }}>
+            <p className="mt-6 text-lg text-white/80">
               {subtitle}
             </p>
             
@@ -51,6 +54,8 @@ const Hero: React.FC<HeroProps> = ({
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Hero;

@@ -51,6 +51,11 @@ const Footer = () => {
                   Lead Genie
                 </Link>
               </li>
+              <li>
+                <Link to="/document-genie" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Document Genie
+                </Link>
+              </li>
             </ul>
           </div>
           

@@ -77,6 +77,14 @@ const Navbar = () => {
                   Lead Genie
                 </Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/document-genie" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-purple-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-purple-400" />
+                  </span>
+                  Document Genie
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>

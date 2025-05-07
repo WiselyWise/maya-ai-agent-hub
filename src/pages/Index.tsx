@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Sparkles, Presentation, MessageSquare, Lightbulb, Image, Mail, Users, FileText } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -68,9 +67,9 @@ const Index = () => {
       <Navbar />
       <main className="pt-16">
         <Hero 
-          title="Your Personal AI Productivity Hub"
-          subtitle="Maya AI Agent Hub offers a suite of specialized AI tools designed to help small business owners and busy executives accomplish more in less time."
-          accentWord="AI Productivity"
+          title="Supercharge Your Productivity with AI"
+          subtitle="Our suite of AI-powered tools helps small business owners and busy executives automate routine tasks, enhance creativity, and make data-driven decisions."
+          accentWord="Productivity"
         />
         
         <section className="py-16">

@@ -41,6 +41,11 @@ const Footer = () => {
                   Meme Generator
                 </Link>
               </li>
+              <li>
+                <Link to="/smart-reply" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Smart Reply AI
+                </Link>
+              </li>
             </ul>
           </div>
           

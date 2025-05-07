@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Presentation, Rocket, Lightbulb, Smile } from 'lucide-react';
+import { Presentation, Rocket, Lightbulb, Smile, MessageSquare } from 'lucide-react';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -38,6 +38,13 @@ const agents = [
     icon: <Smile className="h-6 w-6 text-white" />,
     slug: 'meme-generator',
     gradient: 'from-purple-500 to-coral-600',
+  },
+  {
+    title: 'Smart Reply AI',
+    description: 'Generate AI-enhanced replies to customer messages across all channels. Ensure consistent, on-brand communication that improves satisfaction and drives better outcomes.',
+    icon: <MessageSquare className="h-6 w-6 text-white" />,
+    slug: 'smart-reply',
+    gradient: 'from-teal-500 to-purple-600',
   },
 ];
 

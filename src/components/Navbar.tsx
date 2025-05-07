@@ -69,6 +69,14 @@ const Navbar = () => {
                   Smart Reply
                 </Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/lead-genie" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-coral-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-coral-400" />
+                  </span>
+                  Lead Genie
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>

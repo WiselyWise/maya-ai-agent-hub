@@ -46,6 +46,11 @@ const Footer = () => {
                   Smart Reply AI
                 </Link>
               </li>
+              <li>
+                <Link to="/lead-genie" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Lead Genie
+                </Link>
+              </li>
             </ul>
           </div>
           

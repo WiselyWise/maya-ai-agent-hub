@@ -16,9 +16,9 @@ const Navbar = () => {
           <span className="text-gradient font-bold">AI Powerhouse</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link to="/" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
+          <a href="https://smartmaya.ai" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
             Home
-          </Link>
+          </a>
           <Link to="/presentation-generator" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
             Presentation Generator
           </Link>

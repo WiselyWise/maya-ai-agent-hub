@@ -7,7 +7,7 @@ import LinkedInHero from '@/components/viral-post-generator/LinkedInHero';
 import LinkedInFeatures from '@/components/viral-post-generator/LinkedInFeatures';
 import LinkedInCapabilities from '@/components/viral-post-generator/LinkedInCapabilities';
 import LinkedInHowItWorks from '@/components/viral-post-generator/LinkedInHowItWorks';
-import LinkedInCreator from '@/components/viral-post-generator/LinkedInCreator';
+import LinkedInAccess from '@/components/viral-post-generator/LinkedInAccess';
 import LinkedInFAQ from '@/components/viral-post-generator/LinkedInFAQ';
 import ViralRelatedTools from '@/components/viral-post-generator/ViralRelatedTools';
 import LinkedInDemo from '@/components/viral-post-generator/LinkedInDemo';
@@ -54,7 +54,7 @@ const ViralPostGenerator = () => {
         <LinkedInDemo />
         <LinkedInCapabilities />
         <LinkedInHowItWorks />
-        <LinkedInCreator />
+        <LinkedInAccess />
         <Testimonials />
         <LinkedInFAQ />
         <ViralRelatedTools />

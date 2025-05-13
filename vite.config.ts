@@ -14,7 +14,13 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
-    ssr()  // Simplified SSR config to avoid issues
+    ssr({
+      prerender: {
+        enabled: true,
+        noExtraDir: true,
+        partial: true
+      }
+    })
   ].filter(Boolean),
   resolve: {
     alias: {
@@ -35,6 +41,7 @@ export default defineConfig(({ mode }) => ({
           ]
         }
       }
-    }
+    },
+    ssr: true
   }
 }));

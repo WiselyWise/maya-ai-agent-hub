@@ -14,12 +14,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
-    ssr({
-      prerender: {
-        partial: true,
-        noExtraDir: true
-      }
-    })
+    ssr()  // Simplified SSR config to avoid issues
   ].filter(Boolean),
   resolve: {
     alias: {

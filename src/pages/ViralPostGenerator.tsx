@@ -17,16 +17,16 @@ const ViralPostGenerator = () => {
   return (
     <>
       <Helmet>
-        <title>AI LinkedIn Post Generator for Business Growth & Professional Networking | AI Powerhouse</title>
+        <title>AI LinkedIn Post Generator for Business Growth & Professional Networking | Maya AI</title>
         <meta name="description" content="Create high-performing LinkedIn content in seconds with our specialized LinkedIn Post Generator. Drive engagement, increase professional visibility, and convert connections with AI-optimized posts tailored for LinkedIn's algorithm." />
         <meta name="keywords" content="linkedin post generator, viral linkedin content, business post generator, engagement content, linkedin algorithm, professional networking" />
-        <link rel="canonical" href="https://www.aipowerhouse.com/viral-post-generator" />
+        <link rel="canonical" href="https://agent-hub.smartmaya.ai/viral-post-generator" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "AI LinkedIn Post Generator",
+              "name": "Maya AI LinkedIn Post Generator",
               "applicationCategory": "BusinessApplication",
               "offers": {
                 "@type": "Offer",
@@ -40,6 +40,12 @@ const ViralPostGenerator = () => {
                 "ratingCount": "142",
                 "bestRating": "5",
                 "worstRating": "1"
+              },
+              "url": "https://agent-hub.smartmaya.ai/viral-post-generator",
+              "provider": {
+                "@type": "Organization",
+                "name": "Maya AI",
+                "url": "https://smartmaya.ai"
               }
             }
           `}

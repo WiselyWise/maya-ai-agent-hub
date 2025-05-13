@@ -1,7 +1,9 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import { ssr } from 'vite-plugin-ssr/plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -11,12 +13,33 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
+    ssr({
+      prerender: {
+        partial: true,
+        noExtraDir: true
+      }
+    })
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Improve chunking strategy for better caching
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: [
+            '@/components/ui/button.tsx',
+            '@/components/ui/card.tsx',
+            '@/components/ui/dropdown-menu.tsx',
+            '@/components/ui/toast.tsx'
+          ]
+        }
+      }
+    }
+  }
 }));

@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Sparkles, Presentation, MessageSquare, Lightbulb, Image, Mail, Users, FileText } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -64,6 +66,86 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <title>Maya AI Agent Hub - AI-Powered Business Tools for Productivity & Growth</title>
+        <meta name="description" content="Suite of AI-powered tools for small businesses and busy executives to automate routine tasks, enhance creativity, and make data-driven decisions." />
+        <meta name="keywords" content="ai business tools, executive ai assistant, small business automation, productivity ai, presentation generator, social media ai" />
+        <link rel="canonical" href="https://agent-hub.smartmaya.ai/" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Maya AI Agent Hub",
+              "applicationCategory": "BusinessApplication",
+              "offers": {
+                "@type": "AggregateOffer",
+                "offers": [
+                  {
+                    "@type": "Offer",
+                    "name": "Free Trial",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  }
+                ]
+              },
+              "description": "Suite of AI-powered tools for small businesses and busy executives to automate routine tasks, enhance creativity, and make data-driven decisions.",
+              "url": "https://agent-hub.smartmaya.ai/",
+              "provider": {
+                "@type": "Organization",
+                "name": "Maya AI",
+                "url": "https://smartmaya.ai",
+                "logo": "https://agent-hub.smartmaya.ai/logo.png"
+              },
+              "hasPart": [
+                {
+                  "@type": "SoftwareApplication",
+                  "name": "AI Presentation Generator",
+                  "applicationCategory": "BusinessApplication",
+                  "url": "https://agent-hub.smartmaya.ai/presentation-generator"
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "name": "LinkedIn Post Generator",
+                  "applicationCategory": "BusinessApplication",
+                  "url": "https://agent-hub.smartmaya.ai/viral-post-generator"
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "name": "Prompt Genius",
+                  "applicationCategory": "BusinessApplication",
+                  "url": "https://agent-hub.smartmaya.ai/prompt-genius"
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "name": "AI Meme Generator",
+                  "applicationCategory": "BusinessApplication",
+                  "url": "https://agent-hub.smartmaya.ai/meme-generator"
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "name": "Smart Reply AI",
+                  "applicationCategory": "BusinessApplication",
+                  "url": "https://agent-hub.smartmaya.ai/smart-reply"
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "name": "Lead Genie",
+                  "applicationCategory": "BusinessApplication",
+                  "url": "https://agent-hub.smartmaya.ai/lead-genie"
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "name": "Document Genie",
+                  "applicationCategory": "BusinessApplication",
+                  "url": "https://agent-hub.smartmaya.ai/document-genie"
+                }
+              ]
+            }
+          `}
+        </script>
+      </Helmet>
+      
       <Navbar />
       <main className="pt-16">
         <Hero 

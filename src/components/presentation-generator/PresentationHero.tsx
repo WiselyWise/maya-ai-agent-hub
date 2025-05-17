@@ -5,8 +5,8 @@ import Hero from '@/components/Hero';
 const PresentationHero = () => {
   return (
     <Hero 
-      title="AI Presentation Generator for Professional Slides & Executive Decks"
-      subtitle="Create boardroom-ready presentations in minutes, not hours. Our AI tool helps busy professionals transform basic ideas into compelling slide decks with proper structure, design, and content."
+      title="AI Presentation Generator for Professional Business Decks"
+      subtitle="Create boardroom-ready presentations in minutes. Our AI tool helps busy executives generate professional slide decks with perfect structure, compelling content, and polished design - saving you hours of preparation time."
       ctaText="Try for Free"
       ctaLink="https://app.smartmaya.ai"
       accentWord="Professional"

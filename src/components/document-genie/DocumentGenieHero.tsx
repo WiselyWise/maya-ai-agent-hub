@@ -5,8 +5,8 @@ import Hero from '@/components/Hero';
 const DocumentGenieHero = () => {
   return (
     <Hero
-      title="AI Document Generator for Professional Content & Research"
-      subtitle="Create high-quality documents in minutes, not hours. Our AI tool researches the internet and generates original content with images, charts, and graphs for training guides, essays, white papers, case studies, and ebooks."
+      title="AI Document Generator for Professional Business Content"
+      subtitle="Create high-quality business documents in minutes, not hours. Our AI document generator researches topics and generates original content with images, charts, and graphs for training guides, white papers, case studies, and business reports."
       ctaText="Try Document Genie Free"
       ctaLink="https://app.smartmaya.ai"
       accentWord="Professional"

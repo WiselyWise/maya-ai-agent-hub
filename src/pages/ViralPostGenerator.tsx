@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import LinkedInHero from '@/components/viral-post-generator/LinkedInHero';
@@ -12,45 +11,42 @@ import LinkedInFAQ from '@/components/viral-post-generator/LinkedInFAQ';
 import ViralRelatedTools from '@/components/viral-post-generator/ViralRelatedTools';
 import LinkedInDemo from '@/components/viral-post-generator/LinkedInDemo';
 import Testimonials from '@/components/Testimonials';
+import SEO from '@/components/SEO';
 
 const ViralPostGenerator = () => {
   return (
     <>
-      <Helmet>
-        <title>AI LinkedIn Post Generator for Business Growth & Professional Networking | Maya AI</title>
-        <meta name="description" content="Create high-performing LinkedIn content in seconds with our specialized LinkedIn Post Generator. Drive engagement, increase professional visibility, and convert connections with AI-optimized posts tailored for LinkedIn's algorithm." />
-        <meta name="keywords" content="linkedin post generator, viral linkedin content, business post generator, engagement content, linkedin algorithm, professional networking" />
-        <link rel="canonical" href="https://agent-hub.smartmaya.ai/viral-post-generator" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "Maya AI LinkedIn Post Generator",
-              "applicationCategory": "BusinessApplication",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              },
-              "description": "AI-powered LinkedIn content generator designed for business growth and professional networking. Create optimized posts for LinkedIn's algorithm in seconds to boost your professional visibility.",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.7",
-                "ratingCount": "142",
-                "bestRating": "5",
-                "worstRating": "1"
-              },
-              "url": "https://agent-hub.smartmaya.ai/viral-post-generator",
-              "provider": {
-                "@type": "Organization",
-                "name": "Maya AI",
-                "url": "https://smartmaya.ai"
-              }
-            }
-          `}
-        </script>
-      </Helmet>
+      <SEO 
+        title="LinkedIn Post Generator for Maximum Engagement | Maya AI"
+        description="Generate high-performing LinkedIn content that drives engagement with our AI post generator. Create algorithm-optimized posts in minutes to boost visibility."
+        keywords="linkedin post generator, viral linkedin content, business post generator, engagement content, linkedin algorithm, professional networking"
+        canonicalUrl="https://agent-hub.smartmaya.ai/viral-post-generator"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Maya AI LinkedIn Post Generator",
+          "applicationCategory": "BusinessApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "AI-powered LinkedIn content generator designed for business growth and professional networking. Create optimized posts for LinkedIn's algorithm in seconds to boost your professional visibility.",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "ratingCount": "142",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "url": "https://agent-hub.smartmaya.ai/viral-post-generator",
+          "provider": {
+            "@type": "Organization",
+            "name": "Maya AI",
+            "url": "https://smartmaya.ai"
+          }
+        }}
+      />
       
       <Navbar />
       

@@ -5,8 +5,8 @@ import Hero from '@/components/Hero';
 const LinkedInHero = () => {
   return (
     <Hero 
-      title="Generate a Viral LinkedIn Post in Minutes!"
-      subtitle="Create high-performing LinkedIn content that aligns with LinkedIn's algorithm. Our AI tool helps busy professionals generate engaging posts that drive engagement, increase professional visibility, and convert connections into customers."
+      title="LinkedIn Post Generator for Maximum Engagement and Growth"
+      subtitle="Create high-performing LinkedIn content in seconds that aligns with LinkedIn's algorithm. Our AI tool helps busy professionals generate engaging posts that drive visibility, increase professional networking, and convert connections into opportunities."
       ctaText="Try for Free"
       ctaLink="https://app.smartmaya.ai"
       accentWord="LinkedIn"

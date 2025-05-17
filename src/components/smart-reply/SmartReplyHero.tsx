@@ -5,8 +5,8 @@ import Hero from '@/components/Hero';
 const SmartReplyHero = () => {
   return (
     <Hero 
-      title="AI Smart Reply Generator for Business Communication & Customer Service"
-      subtitle="Generate AI-enhanced replies to customer messages in seconds. Our tool ensures consistent, on-brand responses that improve customer satisfaction, save time, and drive better business outcomes."
+      title="AI Customer Response Generator for Business Communication"
+      subtitle="Generate perfect customer replies in seconds. Our AI tool creates consistent, on-brand responses across email, chat, and social media that improve satisfaction rates, reduce response time, and maintain your professional voice."
       ctaText="Try for Free"
       ctaLink="https://app.smartmaya.ai"
       accentWord="Communication"

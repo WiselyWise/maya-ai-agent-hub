@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Sparkles, Presentation, MessageSquare, Lightbulb, Image, Mail, Users, FileText } from 'lucide-react';
@@ -10,6 +9,7 @@ import FeatureSection from '@/components/FeatureSection';
 import DemoSection from '@/components/DemoSection';
 import Testimonials from '@/components/Testimonials';
 import PricingTable from '@/components/PricingTable';
+import SEO from '@/components/SEO';
 
 const Index = () => {
   const agentTools = [
@@ -66,90 +66,86 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen">
-      <Helmet>
-        <title>Maya AI Agent Hub - AI-Powered Business Tools for Productivity & Growth</title>
-        <meta name="description" content="Suite of AI-powered tools for small businesses and busy executives to automate routine tasks, enhance creativity, and make data-driven decisions." />
-        <meta name="keywords" content="ai business tools, executive ai assistant, small business automation, productivity ai, presentation generator, social media ai" />
-        <link rel="canonical" href="https://agent-hub.smartmaya.ai/" />
-        <script type="application/ld+json">
-          {`
+      <SEO 
+        title="AI Business Tools for Productivity | Maya AI Agent Hub"
+        description="Boost business productivity with Maya AI's suite of AI-powered tools for executives and small business owners. Automate tasks and enhance decision making."
+        keywords="ai business tools, productivity tools, business automation, ai for executives, small business ai, ai productivity suite"
+        canonicalUrl="https://agent-hub.smartmaya.ai/"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Maya AI Agent Hub",
+          "applicationCategory": "BusinessApplication",
+          "offers": {
+            "@type": "AggregateOffer",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Free Trial",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            ]
+          },
+          "description": "Suite of AI-powered tools for small businesses and busy executives to automate routine tasks, enhance creativity, and make data-driven decisions.",
+          "url": "https://agent-hub.smartmaya.ai/",
+          "provider": {
+            "@type": "Organization",
+            "name": "Maya AI",
+            "url": "https://smartmaya.ai",
+            "logo": "https://agent-hub.smartmaya.ai/logo.png"
+          },
+          "hasPart": [
             {
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": "Maya AI Agent Hub",
+              "@type": "SoftwareApplication",
+              "name": "AI Presentation Generator",
               "applicationCategory": "BusinessApplication",
-              "offers": {
-                "@type": "AggregateOffer",
-                "offers": [
-                  {
-                    "@type": "Offer",
-                    "name": "Free Trial",
-                    "price": "0",
-                    "priceCurrency": "USD"
-                  }
-                ]
-              },
-              "description": "Suite of AI-powered tools for small businesses and busy executives to automate routine tasks, enhance creativity, and make data-driven decisions.",
-              "url": "https://agent-hub.smartmaya.ai/",
-              "provider": {
-                "@type": "Organization",
-                "name": "Maya AI",
-                "url": "https://smartmaya.ai",
-                "logo": "https://agent-hub.smartmaya.ai/logo.png"
-              },
-              "hasPart": [
-                {
-                  "@type": "SoftwareApplication",
-                  "name": "AI Presentation Generator",
-                  "applicationCategory": "BusinessApplication",
-                  "url": "https://agent-hub.smartmaya.ai/presentation-generator"
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  "name": "LinkedIn Post Generator",
-                  "applicationCategory": "BusinessApplication",
-                  "url": "https://agent-hub.smartmaya.ai/viral-post-generator"
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  "name": "Prompt Genius",
-                  "applicationCategory": "BusinessApplication",
-                  "url": "https://agent-hub.smartmaya.ai/prompt-genius"
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  "name": "AI Meme Generator",
-                  "applicationCategory": "BusinessApplication",
-                  "url": "https://agent-hub.smartmaya.ai/meme-generator"
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  "name": "Smart Reply AI",
-                  "applicationCategory": "BusinessApplication",
-                  "url": "https://agent-hub.smartmaya.ai/smart-reply"
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  "name": "Lead Genie",
-                  "applicationCategory": "BusinessApplication",
-                  "url": "https://agent-hub.smartmaya.ai/lead-genie"
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  "name": "Document Genie",
-                  "applicationCategory": "BusinessApplication",
-                  "url": "https://agent-hub.smartmaya.ai/document-genie"
-                }
-              ]
+              "url": "https://agent-hub.smartmaya.ai/presentation-generator"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "LinkedIn Post Generator",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://agent-hub.smartmaya.ai/viral-post-generator"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Prompt Genius",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://agent-hub.smartmaya.ai/prompt-genius"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "AI Meme Generator",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://agent-hub.smartmaya.ai/meme-generator"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Smart Reply AI",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://agent-hub.smartmaya.ai/smart-reply"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Lead Genie",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://agent-hub.smartmaya.ai/lead-genie"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Document Genie",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://agent-hub.smartmaya.ai/document-genie"
             }
-          `}
-        </script>
-      </Helmet>
+          ]
+        }}
+      />
       
       <Navbar />
       <main className="pt-16">
         <Hero 
-          title="Supercharge Your Productivity with AI"
+          title="AI Business Tools to Supercharge Your Productivity"
           subtitle="Our suite of AI-powered tools helps small business owners and busy executives automate routine tasks, enhance creativity, and make data-driven decisions."
           accentWord="Productivity"
         />

@@ -16,7 +16,6 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' && componentTagger(),
     ssr({
       prerender: {
-        enabled: true,
         noExtraDir: true,
         partial: true
       }

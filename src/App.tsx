@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -16,30 +17,35 @@ import LeadGenie from "./pages/LeadGenie";
 import DocumentGenie from "./pages/DocumentGenie";
 import NotFound from "./pages/NotFound";
 
+// Create a client outside the component to avoid recreation on renders
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BackgroundEffects />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/presentation-generator" element={<PresentationGenerator />} />
-          <Route path="/viral-post-generator" element={<ViralPostGenerator />} />
-          <Route path="/prompt-genius" element={<PromptGenius />} />
-          <Route path="/meme-generator" element={<MemeGenerator />} />
-          <Route path="/smart-reply" element={<SmartReply />} />
-          <Route path="/lead-genie" element={<LeadGenie />} />
-          <Route path="/document-genie" element={<DocumentGenie />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </TooltipProvider>
-    </HelmetProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  return (
+    <React.StrictMode>
+      <QueryClientProvider client={queryClient}>
+        <HelmetProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <BackgroundEffects />
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/presentation-generator" element={<PresentationGenerator />} />
+              <Route path="/viral-post-generator" element={<ViralPostGenerator />} />
+              <Route path="/prompt-genius" element={<PromptGenius />} />
+              <Route path="/meme-generator" element={<MemeGenerator />} />
+              <Route path="/smart-reply" element={<SmartReply />} />
+              <Route path="/lead-genie" element={<LeadGenie />} />
+              <Route path="/document-genie" element={<DocumentGenie />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </TooltipProvider>
+        </HelmetProvider>
+      </QueryClientProvider>
+    </React.StrictMode>
+  );
+};
 
 export default App;

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
   title: string;
@@ -21,16 +21,21 @@ const SEO: React.FC<SEOProps> = ({
   schema,
   noIndex = false
 }) => {
+  // Ensure canonical URL is absolute
+  const absoluteCanonicalUrl = canonicalUrl.startsWith('http') 
+    ? canonicalUrl 
+    : `https://agent-hub.smartmaya.ai${canonicalUrl.startsWith('/') ? canonicalUrl : `/${canonicalUrl}`}`;
+  
   return (
-    <Helmet>
+    <Helmet prioritizeSeoTags>
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
-      <link rel="canonical" href={canonicalUrl} />
+      <link rel="canonical" href={absoluteCanonicalUrl} />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:url" content={absoluteCanonicalUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />

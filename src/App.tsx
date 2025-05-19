@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import BackgroundEffects from "./components/BackgroundEffects";
+import AnalyticsProvider from "./components/AnalyticsProvider";
 import Index from "./pages/Index";
 import PresentationGenerator from "./pages/PresentationGenerator";
 import ViralPostGenerator from "./pages/ViralPostGenerator";
@@ -28,18 +29,20 @@ const App = () => {
           <Toaster />
           <Sonner />
           <BackgroundEffects />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/presentation-generator" element={<PresentationGenerator />} />
-            <Route path="/viral-post-generator" element={<ViralPostGenerator />} />
-            <Route path="/prompt-genius" element={<PromptGenius />} />
-            <Route path="/meme-generator" element={<MemeGenerator />} />
-            <Route path="/smart-reply" element={<SmartReply />} />
-            <Route path="/lead-genie" element={<LeadGenie />} />
-            <Route path="/document-genie" element={<DocumentGenie />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <AnalyticsProvider>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/presentation-generator" element={<PresentationGenerator />} />
+              <Route path="/viral-post-generator" element={<ViralPostGenerator />} />
+              <Route path="/prompt-genius" element={<PromptGenius />} />
+              <Route path="/meme-generator" element={<MemeGenerator />} />
+              <Route path="/smart-reply" element={<SmartReply />} />
+              <Route path="/lead-genie" element={<LeadGenie />} />
+              <Route path="/document-genie" element={<DocumentGenie />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </AnalyticsProvider>
         </TooltipProvider>
       </HelmetProvider>
     </QueryClientProvider>

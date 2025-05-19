@@ -10,6 +10,8 @@ import DemoSection from '@/components/DemoSection';
 import Testimonials from '@/components/Testimonials';
 import PricingTable from '@/components/PricingTable';
 import SEO from '@/components/SEO';
+import LeadCaptureForm from '@/components/LeadCaptureForm';
+import NewsletterSignup from '@/components/NewsletterSignup';
 
 const Index = () => {
   const agentTools = [
@@ -185,9 +187,52 @@ const Index = () => {
           videoUrl="https://www.youtube.com/watch?v=example-video-id"
         />
         
+        {/* Add lead capture form */}
+        <section className="py-16 bg-gray-900">
+          <div className="container px-4 mx-auto">
+            <div className="flex flex-col lg:flex-row gap-12 items-center">
+              <div className="lg:w-1/2">
+                <h2 className="text-3xl font-bold text-white mb-4">Ready to <span className="text-gradient">Transform</span> Your Productivity?</h2>
+                <p className="text-white/70 mb-6">
+                  Get early access to our AI suite designed specifically for business professionals. Our tools integrate seamlessly with your workflow.
+                </p>
+                <ul className="space-y-3 mb-6">
+                  {["Free trial for 14 days", "No credit card required", "Cancel anytime", "Priority support"].map((item, i) => (
+                    <li key={i} className="flex items-center text-white/70">
+                      <Sparkles className="h-5 w-5 text-purple-500 mr-2" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="lg:w-1/2 w-full">
+                <LeadCaptureForm 
+                  title="Get Priority Access"
+                  description="Fill out this form to get early access to our AI tools."
+                  buttonText="Request Access"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        
         <PricingTable />
         
         <Testimonials />
+        
+        {/* Add newsletter signup */}
+        <section className="py-12 bg-gray-900">
+          <div className="container px-4 mx-auto">
+            <div className="max-w-2xl mx-auto text-center">
+              <NewsletterSignup 
+                title="Stay Updated"
+                description="Get the latest AI productivity tips, feature updates, and exclusive offers delivered to your inbox."
+                buttonText="Subscribe"
+                className="max-w-xl mx-auto"
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

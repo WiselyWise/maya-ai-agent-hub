@@ -22,29 +22,27 @@ const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <React.StrictMode>
-      <QueryClientProvider client={queryClient}>
-        <HelmetProvider>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner />
-            <BackgroundEffects />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/presentation-generator" element={<PresentationGenerator />} />
-              <Route path="/viral-post-generator" element={<ViralPostGenerator />} />
-              <Route path="/prompt-genius" element={<PromptGenius />} />
-              <Route path="/meme-generator" element={<MemeGenerator />} />
-              <Route path="/smart-reply" element={<SmartReply />} />
-              <Route path="/lead-genie" element={<LeadGenie />} />
-              <Route path="/document-genie" element={<DocumentGenie />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </TooltipProvider>
-        </HelmetProvider>
-      </QueryClientProvider>
-    </React.StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <HelmetProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BackgroundEffects />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/presentation-generator" element={<PresentationGenerator />} />
+            <Route path="/viral-post-generator" element={<ViralPostGenerator />} />
+            <Route path="/prompt-genius" element={<PromptGenius />} />
+            <Route path="/meme-generator" element={<MemeGenerator />} />
+            <Route path="/smart-reply" element={<SmartReply />} />
+            <Route path="/lead-genie" element={<LeadGenie />} />
+            <Route path="/document-genie" element={<DocumentGenie />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </TooltipProvider>
+      </HelmetProvider>
+    </QueryClientProvider>
   );
 };
 

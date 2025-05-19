@@ -1,5 +1,5 @@
+
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Sparkles, Presentation, MessageSquare, Lightbulb, Image, Mail, Users, FileText } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';

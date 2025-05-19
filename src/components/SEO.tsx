@@ -27,7 +27,7 @@ const SEO: React.FC<SEOProps> = ({
     : `https://agent-hub.smartmaya.ai${canonicalUrl.startsWith('/') ? canonicalUrl : `/${canonicalUrl}`}`;
   
   return (
-    <Helmet prioritizeSeoTags>
+    <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}

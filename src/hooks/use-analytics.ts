@@ -9,7 +9,7 @@ export const useAnalytics = () => {
   useEffect(() => {
     const trackPageView = async () => {
       try {
-        // Track page view in Supabase
+        // Track page view in Supabase (will use mock client if not connected)
         await supabase
           .from('marketing_page_views')
           .insert({

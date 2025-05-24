@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Sparkles, Presentation, MessageSquare, Lightbulb, Image, Mail, Users, FileText } from 'lucide-react';
+import { Sparkles, Presentation, MessageSquare, Lightbulb, Image, Mail, Users, FileText, Shield } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
@@ -63,6 +62,13 @@ const Index = () => {
       icon: <FileText className="h-6 w-6 text-white" />,
       slug: "document-genie",
       gradient: "from-purple-500 to-purple-600"
+    },
+    {
+      title: "Contract Scanner",
+      description: "Quick contract risk identification for business owners. Highlights key areas for professional review.",
+      icon: <Shield className="h-6 w-6 text-white" />,
+      slug: "contract-scanner",
+      gradient: "from-blue-500 to-blue-600"
     }
   ];
 
@@ -139,6 +145,12 @@ const Index = () => {
               "name": "Document Genie",
               "applicationCategory": "BusinessApplication",
               "url": "https://agent-hub.smartmaya.ai/document-genie"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Contract Scanner",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://agent-hub.smartmaya.ai/contract-scanner"
             }
           ]
         }}

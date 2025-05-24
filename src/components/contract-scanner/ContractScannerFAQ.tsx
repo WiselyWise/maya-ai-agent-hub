@@ -6,36 +6,36 @@ import AnimateOnScroll from '@/components/utils/AnimateOnScroll';
 const ContractScannerFAQ = () => {
   const faqs = [
     {
-      question: 'What types of contracts can Maya AI Contract Scanner analyze?',
-      answer: 'Our AI can analyze various business contracts including service agreements, vendor contracts, employment agreements, partnership agreements, NDAs, licensing agreements, and more. The system works with PDF, Word, and text formats.'
+      question: 'Is Maya AI Contract Risk Scanner a replacement for legal advice?',
+      answer: 'No, absolutely not. Maya AI Contract Risk Scanner is a preliminary tool designed to help busy executives quickly identify potential risk areas before consulting with qualified legal professionals. It is not legal advice and should never be used as a substitute for professional legal counsel.'
     },
     {
-      question: 'How accurate is the risk assessment and obligation identification?',
-      answer: 'Maya AI Contract Scanner uses advanced natural language processing with 95%+ accuracy in identifying key obligations and risks. However, we always recommend having critical contracts reviewed by qualified professionals as a final step.'
+      question: 'What types of contracts can the risk scanner analyze?',
+      answer: 'Our AI can scan various business contracts including service agreements, vendor contracts, employment agreements, partnership agreements, NDAs, and licensing agreements. The scanner works with PDF, Word, and text formats to provide quick risk identification.'
+    },
+    {
+      question: 'How accurate is the risk identification?',
+      answer: 'While our AI provides helpful preliminary risk identification, it is designed as a starting point for professional review. The tool flags potential areas of concern, but accuracy depends on contract complexity. Always have contracts reviewed by qualified professionals for final decisions.'
     },
     {
       question: 'Is my contract data secure and confidential?',
-      answer: 'Absolutely. We use enterprise-grade encryption for all document uploads and processing. Your contracts are processed securely and are never stored permanently on our servers. We maintain strict confidentiality protocols.'
+      answer: 'Yes, we use enterprise-grade encryption for all document uploads and processing. Your contracts are processed securely and are not stored permanently on our servers. We maintain strict confidentiality protocols for all business documents.'
     },
     {
-      question: 'How long does the analysis process take?',
-      answer: 'Most contract analyses are completed within 2-5 minutes, depending on document length and complexity. You\'ll receive a comprehensive report with risk assessments and mitigation strategies.'
+      question: 'How quickly does the risk scanning process work?',
+      answer: 'Most contract risk scans are completed within 2-5 minutes, making it perfect for busy executives who need quick preliminary insights before scheduling professional consultations with their legal advisors.'
     },
     {
-      question: 'Can I compare multiple contract versions?',
-      answer: 'Yes! Our comparison feature allows you to upload multiple versions of the same contract to identify changes, amendments, and new risks that may have been introduced between versions.'
+      question: 'What do I get in the risk scan results?',
+      answer: 'You receive a summary report highlighting identified risk areas, key clauses requiring attention, and brief explanations of what to look out for. This report is designed to help you prepare meaningful discussions with your professional advisors.'
     },
     {
-      question: 'What format are the analysis reports provided in?',
-      answer: 'Reports are available in professional PDF format with executive summaries, detailed risk breakdowns, obligation lists, and actionable recommendations. You can also export data to Excel for further analysis.'
+      question: 'Can this tool help with compliance requirements?',
+      answer: 'The risk scanner can identify clauses that may relate to compliance areas, but it does not provide compliance advice or guidance. All compliance matters must be addressed with qualified legal and regulatory professionals who understand your specific industry and situation.'
     },
     {
-      question: 'Do you offer team or enterprise plans?',
-      answer: 'Yes, we offer scalable plans for teams and enterprises with features like centralized dashboards, collaboration tools, approval workflows, and advanced reporting capabilities.'
-    },
-    {
-      question: 'Can the AI handle contracts in different languages?',
-      answer: 'Currently, Maya AI Contract Scanner primarily supports English-language contracts. We\'re working on expanding language support and will announce additional languages as they become available.'
+      question: 'Who should use Maya AI Contract Risk Scanner?',
+      answer: 'This tool is designed for busy business owners, executives, and professionals who want a quick preliminary overview of contract risks before engaging with their legal advisors. It\'s perfect for time-pressed situations where you need initial insights quickly.'
     }
   ];
 
@@ -48,7 +48,7 @@ const ContractScannerFAQ = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-white/70">
-              Get answers to common questions about Maya AI Contract Scanner
+              Common questions about Maya AI Contract Risk Scanner
             </p>
           </div>
         </AnimateOnScroll>
@@ -70,6 +70,18 @@ const ContractScannerFAQ = () => {
               </AccordionItem>
             ))}
           </Accordion>
+        </AnimateOnScroll>
+        
+        <AnimateOnScroll animation="fade-in" delay={400}>
+          <div className="mt-12 text-center">
+            <div className="bg-red-500/20 border border-red-500/30 rounded-lg p-6 max-w-4xl mx-auto">
+              <p className="text-red-200 text-sm">
+                <strong>Important Legal Disclaimer:</strong> Maya AI Contract Risk Scanner provides preliminary risk identification only. 
+                This tool does not constitute legal advice and is not a substitute for consultation with qualified legal professionals. 
+                Users must seek appropriate legal and professional counsel for their specific circumstances and compliance requirements.
+              </p>
+            </div>
+          </div>
         </AnimateOnScroll>
       </div>
     </section>

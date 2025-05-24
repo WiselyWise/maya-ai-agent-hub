@@ -10,21 +10,21 @@ const ContractScannerRelatedTools = () => {
   const relatedTools = [
     {
       title: 'Document Genie',
-      description: 'Create professional contracts and business documents after your analysis is complete.',
+      description: 'Create professional business documents and contracts after your initial risk assessment.',
       icon: <FileText className="h-6 w-6" />,
       color: 'from-purple-500 to-purple-600',
       link: '/document-genie'
     },
     {
       title: 'Lead Genie', 
-      description: 'Manage vendor and client relationships discovered through contract analysis.',
+      description: 'Manage business relationships and contacts identified through your contract review process.',
       icon: <Users className="h-6 w-6" />,
       color: 'from-coral-500 to-coral-600',
       link: '/lead-genie'
     },
     {
       title: 'Smart Reply',
-      description: 'Generate professional responses for contract negotiations and communications.',
+      description: 'Generate professional responses for business communications and contract discussions.',
       icon: <MessageSquare className="h-6 w-6" />,
       color: 'from-teal-500 to-teal-600',
       link: '/smart-reply'
@@ -37,11 +37,11 @@ const ContractScannerRelatedTools = () => {
         <AnimateOnScroll animation="fade-in">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Complete Your Contract Workflow
+              Complete Your Business Document Workflow
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Enhance your contract management process with our integrated AI tools 
-              designed to work seamlessly together.
+              Enhance your business document processes with our integrated AI tools 
+              designed to work together for busy professionals.
             </p>
           </div>
         </AnimateOnScroll>

@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Scale, Shield, AlertTriangle, CheckCircle } from 'lucide-react';
+import { AlertTriangle, FileCheck, Eye, Clock } from 'lucide-react';
 import AnimateOnScroll from '@/components/utils/AnimateOnScroll';
 
 const ContractScannerCapabilities = () => {
   const capabilities = [
     {
-      icon: <Scale className="h-8 w-8 text-blue-400" />,
+      icon: <FileCheck className="h-8 w-8 text-blue-400" />,
       title: 'Contract Types Supported',
       items: [
         'Service Agreements',
@@ -19,39 +19,39 @@ const ContractScannerCapabilities = () => {
       ]
     },
     {
-      icon: <Shield className="h-8 w-8 text-green-400" />,
-      title: 'Risk Categories',
+      icon: <AlertTriangle className="h-8 w-8 text-orange-400" />,
+      title: 'Risk Categories Identified',
       items: [
-        'Financial Exposure',
-        'Compliance Requirements',
+        'Financial Exposure Areas',
         'Performance Obligations',
         'Liability Concerns',
         'Termination Clauses',
-        'Intellectual Property'
+        'Payment Terms',
+        'Intellectual Property Issues'
       ]
     },
     {
-      icon: <AlertTriangle className="h-8 w-8 text-orange-400" />,
-      title: 'Analysis Depth',
+      icon: <Eye className="h-8 w-8 text-green-400" />,
+      title: 'Scanning Approach',
       items: [
-        'Clause-by-clause Review',
-        'Cross-reference Checking',
-        'Deadline Identification',
-        'Payment Term Analysis',
-        'Renewal Clause Review',
-        'Penalty Assessment'
+        'Key Clause Identification',
+        'Risk Area Flagging',
+        'Important Deadline Spotting',
+        'Payment Term Highlighting',
+        'Renewal Clause Detection',
+        'Penalty Identification'
       ]
     },
     {
-      icon: <CheckCircle className="h-8 w-8 text-purple-400" />,
+      icon: <Clock className="h-8 w-8 text-purple-400" />,
       title: 'Output Formats',
       items: [
         'Executive Summary',
-        'Detailed Risk Reports',
-        'Action Item Lists',
-        'Compliance Checklists',
-        'Comparison Charts',
-        'Exportable Dashboards'
+        'Risk Highlight Report',
+        'Key Areas List',
+        'Priority Review Items',
+        'Quick Reference Guide',
+        'Professional Discussion Points'
       ]
     }
   ];
@@ -62,11 +62,11 @@ const ContractScannerCapabilities = () => {
         <AnimateOnScroll animation="fade-in">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Advanced Analysis Capabilities
+              Quick Risk Scanning Capabilities
             </h2>
             <p className="text-lg text-white/70 max-w-3xl mx-auto">
-              Maya AI Contract Scanner provides comprehensive analysis across multiple 
-              contract types with deep insights and actionable recommendations.
+              Maya AI Contract Risk Scanner provides rapid preliminary analysis to help busy 
+              professionals identify areas requiring professional legal review.
             </p>
           </div>
         </AnimateOnScroll>

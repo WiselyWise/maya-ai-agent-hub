@@ -16,8 +16,8 @@ const ContractScanner = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Maya AI Contract Scanner",
-    "description": "AI-powered contract analysis tool for business document review, risk assessment, and mitigation strategies",
+    "name": "Maya AI Contract Risk Scanner",
+    "description": "Quick contract risk scanning tool for busy business owners and executives. Provides preliminary risk identification before professional consultation.",
     "url": "https://agent-hub.smartmaya.ai/contract-scanner",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web Browser",
@@ -32,20 +32,21 @@ const ContractScanner = () => {
       "reviewCount": "134"
     },
     "features": [
-      "Contract obligation identification",
-      "Business risk assessment", 
-      "Mitigation strategy recommendations",
-      "Document comparison tools",
-      "Professional report generation"
-    ]
+      "Quick contract risk identification",
+      "Key clause highlighting", 
+      "Risk area explanations",
+      "Executive summary reports",
+      "Preliminary scanning for professional consultation"
+    ],
+    "disclaimer": "This tool provides preliminary risk identification only and is not legal advice. Users must consult with qualified legal and professional advisors."
   };
 
   return (
     <>
       <SEO
-        title="AI Contract Review Scanner for Business Risk Assessment | Maya AI"
-        description="Streamline contract analysis with Maya AI Contract Scanner. Identify key obligations, assess potential risks, and get actionable mitigation strategies to protect your business interests."
-        keywords="ai contract scanner, contract review software, business risk assessment, contract analysis tool, business contract scanner, ai business assistant"
+        title="AI Contract Risk Scanner for Quick Business Review | Maya AI"
+        description="Quick contract risk scanning for busy executives. Get preliminary risk identification and key areas to review with your professional advisors. Not legal advice - consultation tool only."
+        keywords="contract risk scanner, business contract review, executive contract tool, preliminary risk assessment, business document scanner"
         canonicalUrl="https://agent-hub.smartmaya.ai/contract-scanner"
         schema={schema}
       />

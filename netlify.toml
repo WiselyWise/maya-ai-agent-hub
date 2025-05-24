@@ -14,3 +14,15 @@
   [plugins.inputs]
     source = "dist"
     minifyHTMLOpts = true
+    # Explicit routes to ensure all pages get prerendered
+    routes = [
+      "/",
+      "/presentation-generator",
+      "/viral-post-generator", 
+      "/prompt-genius",
+      "/meme-generator",
+      "/smart-reply",
+      "/lead-genie",
+      "/document-genie",
+      "/contract-scanner"
+    ]

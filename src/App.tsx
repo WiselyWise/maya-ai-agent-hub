@@ -16,6 +16,7 @@ import MemeGenerator from "./pages/MemeGenerator";
 import SmartReply from "./pages/SmartReply";
 import LeadGenie from "./pages/LeadGenie";
 import DocumentGenie from "./pages/DocumentGenie";
+import ContractScanner from "./pages/ContractScanner";
 import NotFound from "./pages/NotFound";
 
 // Create a client outside the component to avoid recreation on renders
@@ -39,6 +40,7 @@ const App = () => {
               <Route path="/smart-reply" element={<SmartReply />} />
               <Route path="/lead-genie" element={<LeadGenie />} />
               <Route path="/document-genie" element={<DocumentGenie />} />
+              <Route path="/contract-scanner" element={<ContractScanner />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

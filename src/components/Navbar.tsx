@@ -85,6 +85,14 @@ const Navbar = () => {
                   Document Genie
                 </Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/contract-scanner" className="flex items-center gap-2 cursor-pointer">
+                  <span className="h-4 w-4 rounded-full bg-blue-500/20 flex items-center justify-center">
+                    <Sparkles className="h-3 w-3 text-blue-400" />
+                  </span>
+                  Contract Scanner
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>

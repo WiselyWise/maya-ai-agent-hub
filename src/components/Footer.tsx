@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
@@ -54,6 +53,11 @@ const Footer = () => {
               <li>
                 <Link to="/document-genie" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
                   Document Genie
+                </Link>
+              </li>
+              <li>
+                <Link to="/contract-scanner" className="text-sm text-white/70 hover:text-purple-400 transition-colors">
+                  Contract Scanner
                 </Link>
               </li>
             </ul>

@@ -1,21 +1,10 @@
 
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App.tsx';
 import './index.css';
 
-// Client-side rendering
-const rootElement = document.getElementById('root');
+export { createApp }
 
-if (!rootElement) {
-  console.error('Cannot find root element');
-} else {
-  createRoot(rootElement).render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </React.StrictMode>
-  );
+function createApp() {
+  // This function will be called by vite-plugin-ssr
+  // We don't need to do anything here as the rendering is handled by the renderer
+  return {}
 }

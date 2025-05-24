@@ -1,10 +1,14 @@
 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.tsx';
 import './index.css';
 
-export { createApp }
-
-function createApp() {
-  // This function will be called by vite-plugin-ssr
-  // We don't need to do anything here as the rendering is handled by the renderer
-  return {}
-}
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+);

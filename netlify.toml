@@ -1,0 +1,17 @@
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Catch-all so deep links serve index.html if prerender misses anything
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
+
+[[plugins]]
+  package = "netlify-plugin-prerender-spa"
+  [plugins.inputs]
+    buildDirectory = "dist"
+    routes         = [ "/" ]       # start crawl from home
+    crawl          = true          # auto-discover all internal pages

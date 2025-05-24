@@ -41,7 +41,6 @@ const App = () => {
               <Route path="/lead-genie" element={<LeadGenie />} />
               <Route path="/document-genie" element={<DocumentGenie />} />
               <Route path="/contract-scanner" element={<ContractScanner />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </AnalyticsProvider>

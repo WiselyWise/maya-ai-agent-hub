@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,10 +11,12 @@ import PromptRelatedTools from '@/components/prompt-genius/PromptRelatedTools';
 import PromptDemo from '@/components/prompt-genius/PromptDemo';
 import Testimonials from '@/components/Testimonials';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const PromptGenius = () => {
   return (
     <>
+      <RenderLogger componentName="PromptGenius" route="/prompt-genius" />
       <SEO 
         title="AI Prompt Engineering for Business Results | Maya AI"
         description="Master AI prompt engineering for better business outcomes. Our Prompt Genius helps professionals create sophisticated prompts for any AI system without technical expertise."

@@ -1,4 +1,5 @@
 
+
 [build]
   command = "npm run build"
   publish = "dist"
@@ -8,3 +9,17 @@
   from = "/*"
   to   = "/index.html"
   status = 200
+
+[[plugins]]
+  package = "netlify-plugin-prerender-spa"
+  [plugins.inputs]
+    source = "dist"
+    minifyHTMLOpts = true
+    # Add timeout and debugging options
+    renderAfterTime = 1000
+    renderAfterElementExists = "body"
+    timeout = 300000
+    # 5 minute timeout instead of default
+    crawlLinksFromMarkup = false
+    # Disable automatic link crawling to prevent infinite loops
+

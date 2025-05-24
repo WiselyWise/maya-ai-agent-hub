@@ -12,10 +12,12 @@ import PresentationRelatedTools from '@/components/presentation-generator/Presen
 import PresentationDemo from '@/components/presentation-generator/PresentationDemo';
 import Testimonials from '@/components/Testimonials';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const PresentationGenerator = () => {
   return (
     <>
+      <RenderLogger componentName="PresentationGenerator" route="/presentation-generator" />
       <SEO 
         title="AI Presentation Generator for Business Decks | Maya AI"
         description="Create professional business presentations in minutes with our AI presentation generator. Transform ideas into compelling slide decks with proper structure and design."

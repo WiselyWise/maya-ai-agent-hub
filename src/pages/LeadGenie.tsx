@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -11,10 +10,12 @@ import LeadGenieDemo from '@/components/lead-genie/LeadGenieDemo';
 import LeadGenieFAQ from '@/components/lead-genie/LeadGenieFAQ';
 import LeadGenieRelatedTools from '@/components/lead-genie/LeadGenieRelatedTools';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const LeadGenie = () => {
   return (
     <div className="relative min-h-screen">
+      <RenderLogger componentName="LeadGenie" route="/lead-genie" />
       <SEO 
         title="AI Sales Lead Generation Tool for Growth | Maya AI"
         description="Streamline your sales process with our AI lead generation tool. Define ICPs, create personalized campaigns, and manage your entire sales funnel in one platform."

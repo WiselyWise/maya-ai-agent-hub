@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,10 +11,12 @@ import ViralRelatedTools from '@/components/viral-post-generator/ViralRelatedToo
 import LinkedInDemo from '@/components/viral-post-generator/LinkedInDemo';
 import Testimonials from '@/components/Testimonials';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const ViralPostGenerator = () => {
   return (
     <>
+      <RenderLogger componentName="ViralPostGenerator" route="/viral-post-generator" />
       <SEO 
         title="LinkedIn Post Generator for Maximum Engagement | Maya AI"
         description="Generate high-performing LinkedIn content that drives engagement with our AI post generator. Create algorithm-optimized posts in minutes to boost visibility."

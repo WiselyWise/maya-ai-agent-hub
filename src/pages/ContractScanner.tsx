@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -11,6 +10,7 @@ import ContractScannerFAQ from '@/components/contract-scanner/ContractScannerFAQ
 import ContractScannerRelatedTools from '@/components/contract-scanner/ContractScannerRelatedTools';
 import ContractScannerAccess from '@/components/contract-scanner/ContractScannerAccess';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const ContractScanner = () => {
   const schema = {
@@ -44,6 +44,7 @@ const ContractScanner = () => {
 
   return (
     <>
+      <RenderLogger componentName="ContractScanner" route="/contract-scanner" />
       <SEO
         title="Maya AI Contract Risk Scanner - Quick Business Contract Risk Assessment"
         description="Maya AI Contract Risk Scanner helps busy executives quickly identify potential contract risks and key areas to discuss with professional advisors. Get preliminary risk assessment in minutes - not legal advice."

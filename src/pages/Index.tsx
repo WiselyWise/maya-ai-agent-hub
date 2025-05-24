@@ -11,6 +11,7 @@ import PricingTable from '@/components/PricingTable';
 import SEO from '@/components/SEO';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 import NewsletterSignup from '@/components/NewsletterSignup';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const Index = () => {
   const agentTools = [
@@ -74,6 +75,7 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen">
+      <RenderLogger componentName="Index" route="/" />
       <SEO 
         title="AI Business Tools for Productivity | Maya AI Agent Hub"
         description="Boost business productivity with Maya AI's suite of AI-powered tools for executives and small business owners. Automate tasks and enhance decision making."

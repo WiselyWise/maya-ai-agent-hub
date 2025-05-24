@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -11,10 +10,12 @@ import DocumentGenieDemo from '@/components/document-genie/DocumentGenieDemo';
 import DocumentGenieFAQ from '@/components/document-genie/DocumentGenieFAQ';
 import DocumentGenieRelatedTools from '@/components/document-genie/DocumentGenieRelatedTools';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const DocumentGenie = () => {
   return (
     <div className="relative min-h-screen">
+      <RenderLogger componentName="DocumentGenie" route="/document-genie" />
       <SEO 
         title="AI Document Generator for Business Content | Maya AI"
         description="Create high-quality business documents in minutes with our AI document generator. Generate research-backed content for reports, white papers, and more."

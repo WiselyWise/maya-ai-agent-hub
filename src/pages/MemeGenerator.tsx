@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,10 +11,12 @@ import RelatedTools from '@/components/meme-generator/RelatedTools';
 import MemeDemo from '@/components/meme-generator/MemeDemo';
 import Testimonials from '@/components/Testimonials';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const MemeGenerator = () => {
   return (
     <>
+      <RenderLogger componentName="MemeGenerator" route="/meme-generator" />
       <SEO 
         title="Business Meme Generator for Marketing Strategy | Maya AI"
         description="Create professional, brand-aligned memes for your marketing strategy with our AI business meme generator. Drive social engagement and save creative time."

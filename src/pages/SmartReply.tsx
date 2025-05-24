@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,10 +11,12 @@ import SmartReplyRelatedTools from '@/components/smart-reply/SmartReplyRelatedTo
 import SmartReplyDemo from '@/components/smart-reply/SmartReplyDemo';
 import Testimonials from '@/components/Testimonials';
 import SEO from '@/components/SEO';
+import RenderLogger from '@/components/debug/RenderLogger';
 
 const SmartReply = () => {
   return (
     <>
+      <RenderLogger componentName="SmartReply" route="/smart-reply" />
       <SEO 
         title="AI Customer Response Generator for Businesses | Maya AI"
         description="Generate consistent, on-brand customer replies instantly with our AI response generator. Improve satisfaction and save time across all communication channels."

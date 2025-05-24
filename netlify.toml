@@ -1,18 +1,10 @@
 
-
 [build]
   command = "npm run build"
   publish = "dist"
 
-# Catch-all so deep links serve index.html if prerender misses anything
+# Catch-all so deep links serve index.html
 [[redirects]]
   from = "/*"
   to   = "/index.html"
   status = 200
-
-[[plugins]]
-  package = "netlify-plugin-prerender-spa"
-  [plugins.inputs]
-    source = "dist"
-    minifyHTMLOpts = true
-

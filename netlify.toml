@@ -12,6 +12,5 @@
 [[plugins]]
   package = "netlify-plugin-prerender-spa"
   [plugins.inputs]
-    buildDirectory = "dist"
-    routes         = [ "/" ]       # start crawl from home
-    crawl          = true          # auto-discover all internal pages
+    source = "dist"
+    minifyHTMLOpts = true

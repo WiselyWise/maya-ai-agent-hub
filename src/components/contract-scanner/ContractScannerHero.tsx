@@ -13,7 +13,7 @@ const ContractScannerHero = () => {
             <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
               <AlertTriangle className="h-6 w-6 text-white" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold">
+            <h1 className="text-4xl md:text-6xl font-bold text-white">
               Maya AI <span className="text-gradient-mixed">Contract Risk Scanner</span>
             </h1>
           </div>

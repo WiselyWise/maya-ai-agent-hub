@@ -34,10 +34,9 @@ const Hero: React.FC<HeroProps> = ({
             </span>
             
             <h1 
-              className="font-bold text-white" 
+              className="text-4xl font-bold tracking-tight text-white sm:text-6xl" 
               dangerouslySetInnerHTML={{__html: formattedTitle}}
-            >
-            </h1>
+            />
             
             <p className="mt-6 text-lg text-white/80">
               {subtitle}

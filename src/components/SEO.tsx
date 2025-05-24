@@ -28,10 +28,12 @@ const SEO: React.FC<SEOProps> = ({
   
   return (
     <Helmet>
+      {/* Primary meta tags - these will override the fallback tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={absoluteCanonicalUrl} />
+      
+      {keywords && <meta name="keywords" content={keywords} />}
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import AnimateOnScroll from '@/components/utils/AnimateOnScroll';
@@ -47,7 +46,7 @@ const ContractScannerFAQ = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-white/70">
+            <p className="text-lg text-white/80">
               Common questions about Maya AI Contract Risk Scanner
             </p>
           </div>
@@ -64,7 +63,7 @@ const ContractScannerFAQ = () => {
                 <AccordionTrigger className="text-white hover:text-blue-400 text-left">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-white/70 pt-2">
+                <AccordionContent className="text-white/80 pt-2">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -75,7 +74,7 @@ const ContractScannerFAQ = () => {
         <AnimateOnScroll animation="fade-in" delay={400}>
           <div className="mt-12 text-center">
             <div className="bg-red-500/20 border border-red-500/30 rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-red-200 text-sm">
+              <p className="text-red-100 text-sm">
                 <strong>Important Legal Disclaimer:</strong> Maya AI Contract Risk Scanner provides preliminary risk identification only. 
                 This tool does not constitute legal advice and is not a substitute for consultation with qualified legal professionals. 
                 Users must seek appropriate legal and professional counsel for their specific circumstances and compliance requirements.

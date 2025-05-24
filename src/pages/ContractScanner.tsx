@@ -17,7 +17,7 @@ const ContractScanner = () => {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Maya AI Contract Risk Scanner",
-    "description": "Quick contract risk scanning tool for busy business owners and executives. Provides preliminary risk identification before professional consultation.",
+    "description": "Quick contract risk scanning tool for busy business owners and executives. Identifies potential risks and key areas requiring professional review - not legal advice.",
     "url": "https://agent-hub.smartmaya.ai/contract-scanner",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web Browser",
@@ -44,9 +44,9 @@ const ContractScanner = () => {
   return (
     <>
       <SEO
-        title="AI Contract Risk Scanner for Quick Business Review | Maya AI"
-        description="Quick contract risk scanning for busy executives. Get preliminary risk identification and key areas to review with your professional advisors. Not legal advice - consultation tool only."
-        keywords="contract risk scanner, business contract review, executive contract tool, preliminary risk assessment, business document scanner"
+        title="Maya AI Contract Risk Scanner for Business Risk Assessment | Quick Risk Identification"
+        description="Quick contract risk scanning for busy executives and business owners. Get preliminary risk identification and key areas to review with professional advisors. Not legal advice - consultation preparation tool only."
+        keywords="contract risk scanner, business contract risk assessment, executive contract review, preliminary risk identification, contract risk analysis, business document scanner"
         canonicalUrl="https://agent-hub.smartmaya.ai/contract-scanner"
         schema={schema}
       />

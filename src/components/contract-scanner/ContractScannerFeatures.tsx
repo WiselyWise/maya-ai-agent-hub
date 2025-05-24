@@ -52,7 +52,7 @@ const ContractScannerFeatures = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Quick Contract Risk Scanning Features
             </h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Designed for busy executives who need a preliminary overview of contract risks 
               before engaging with professional advisors.
             </p>
@@ -70,7 +70,7 @@ const ContractScannerFeatures = () => {
         <AnimateOnScroll animation="fade-in" delay={800}>
           <div className="mt-12 text-center">
             <div className="bg-gray-500/20 border border-gray-500/30 rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-gray-200 text-sm">
+              <p className="text-gray-100 text-sm">
                 <strong>Disclaimer:</strong> Maya AI Contract Risk Scanner provides preliminary risk identification only. 
                 This tool is not a substitute for professional legal advice. Users must consult with qualified legal 
                 and professional advisors for specific guidance, compliance requirements, and final decision-making.

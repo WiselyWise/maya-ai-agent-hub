@@ -20,12 +20,12 @@ const ContractScannerHero = () => {
         </AnimateOnScroll>
         
         <AnimateOnScroll animation="fade-in" delay={200}>
-          <p className="text-xl text-white/80 mb-4 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white mb-4 max-w-3xl mx-auto leading-relaxed">
             Quick contract risk scanning for busy business owners and executives. 
             Get instant insights into potential risks and key areas to review with your professional advisors.
           </p>
           <div className="bg-orange-500/20 border border-orange-500/30 rounded-lg p-4 mb-8 max-w-4xl mx-auto">
-            <p className="text-orange-200 text-sm">
+            <p className="text-orange-100 text-sm">
               <strong>Important:</strong> This tool provides preliminary risk identification only and is not legal advice. 
               Always consult with qualified legal and professional advisors for your specific situation and compliance requirements.
             </p>
@@ -44,7 +44,7 @@ const ContractScannerHero = () => {
         </AnimateOnScroll>
         
         <AnimateOnScroll animation="fade-in" delay={600}>
-          <div className="flex flex-wrap justify-center gap-8 text-sm text-white/60">
+          <div className="flex flex-wrap justify-center gap-8 text-sm text-white/80">
             <div className="flex items-center gap-2">
               <AlertTriangle className="h-4 w-4 text-blue-400" />
               <span>Risk Identification</span>

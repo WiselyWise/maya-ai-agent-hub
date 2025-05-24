@@ -27,7 +27,7 @@ const ContractScannerHowItWorks = () => {
     {
       icon: <Download className="h-8 w-8" />,
       title: 'Get Summary',
-      description: 'Download your preliminary risk summary to discuss with your legal and professional advisors.',
+      description: 'Download your preliminary risk summary to discuss with your professional advisors.',
       color: 'from-green-500 to-green-600'
     }
   ];
@@ -40,7 +40,7 @@ const ContractScannerHowItWorks = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               How Maya AI Contract Risk Scanner Works
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Get a preliminary risk overview in four simple steps. Perfect for busy executives 
               who need quick insights before professional consultation.
             </p>
@@ -59,7 +59,7 @@ const ContractScannerHowItWorks = () => {
                     {index + 1}
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
-                  <p className="text-white/80">{step.description}</p>
+                  <p className="text-white/90">{step.description}</p>
                 </CardContent>
               </Card>
             </AnimateOnScroll>
@@ -71,7 +71,7 @@ const ContractScannerHowItWorks = () => {
             <div className="bg-blue-500/20 border border-blue-500/30 rounded-lg p-6 max-w-4xl mx-auto">
               <p className="text-blue-100 text-sm">
                 <strong>Remember:</strong> This is a preliminary scanning tool designed to help you prepare 
-                for discussions with professional advisors. It does not replace professional legal counsel.
+                for discussions with professional advisors. It does not replace professional consultation.
               </p>
             </div>
           </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import AnimateOnScroll from '@/components/utils/AnimateOnScroll';
@@ -5,8 +6,8 @@ import AnimateOnScroll from '@/components/utils/AnimateOnScroll';
 const ContractScannerFAQ = () => {
   const faqs = [
     {
-      question: 'Is Maya AI Contract Risk Scanner a replacement for legal advice?',
-      answer: 'No, absolutely not. Maya AI Contract Risk Scanner is a preliminary tool designed to help busy executives quickly identify potential risk areas before consulting with qualified legal professionals. It is not legal advice and should never be used as a substitute for professional legal counsel.'
+      question: 'Is Maya AI Contract Risk Scanner a replacement for professional advice?',
+      answer: 'No, absolutely not. Maya AI Contract Risk Scanner is a preliminary tool designed to help busy executives quickly identify potential risk areas before consulting with qualified professional advisors. It is not professional advice and should never be used as a substitute for qualified professional consultation.'
     },
     {
       question: 'What types of contracts can the risk scanner analyze?',
@@ -22,7 +23,7 @@ const ContractScannerFAQ = () => {
     },
     {
       question: 'How quickly does the risk scanning process work?',
-      answer: 'Most contract risk scans are completed within 2-5 minutes, making it perfect for busy executives who need quick preliminary insights before scheduling professional consultations with their legal advisors.'
+      answer: 'Most contract risk scans are completed within 2-5 minutes, making it perfect for busy executives who need quick preliminary insights before scheduling professional consultations with their advisors.'
     },
     {
       question: 'What do I get in the risk scan results?',
@@ -30,11 +31,11 @@ const ContractScannerFAQ = () => {
     },
     {
       question: 'Can this tool help with compliance requirements?',
-      answer: 'The risk scanner can identify clauses that may relate to compliance areas, but it does not provide compliance advice or guidance. All compliance matters must be addressed with qualified legal and regulatory professionals who understand your specific industry and situation.'
+      answer: 'The risk scanner can identify clauses that may relate to compliance areas, but it does not provide compliance advice or guidance. All compliance matters must be addressed with qualified professional advisors who understand your specific industry and situation.'
     },
     {
       question: 'Who should use Maya AI Contract Risk Scanner?',
-      answer: 'This tool is designed for busy business owners, executives, and professionals who want a quick preliminary overview of contract risks before engaging with their legal advisors. It\'s perfect for time-pressed situations where you need initial insights quickly.'
+      answer: 'This tool is designed for busy business owners, executives, and professionals who want a quick preliminary overview of contract risks before engaging with their professional advisors. It\'s perfect for time-pressed situations where you need initial insights quickly.'
     }
   ];
 
@@ -46,7 +47,7 @@ const ContractScannerFAQ = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-white/80">
+            <p className="text-lg text-white/90">
               Common questions about Maya AI Contract Risk Scanner
             </p>
           </div>
@@ -63,7 +64,7 @@ const ContractScannerFAQ = () => {
                 <AccordionTrigger className="text-white hover:text-blue-400 text-left">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-white/80 pt-2">
+                <AccordionContent className="text-white/90 pt-2">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -75,9 +76,9 @@ const ContractScannerFAQ = () => {
           <div className="mt-12 text-center">
             <div className="bg-red-500/20 border border-red-500/30 rounded-lg p-6 max-w-4xl mx-auto">
               <p className="text-red-100 text-sm">
-                <strong>Important Legal Disclaimer:</strong> Maya AI Contract Risk Scanner provides preliminary risk identification only. 
-                This tool does not constitute legal advice and is not a substitute for consultation with qualified legal professionals. 
-                Users must seek appropriate legal and professional counsel for their specific circumstances and compliance requirements.
+                <strong>Important Disclaimer:</strong> Maya AI Contract Risk Scanner provides preliminary risk identification only. 
+                This tool does not constitute professional advice and is not a substitute for consultation with qualified professional advisors. 
+                Users must seek appropriate professional counsel for their specific circumstances and compliance requirements.
               </p>
             </div>
           </div>

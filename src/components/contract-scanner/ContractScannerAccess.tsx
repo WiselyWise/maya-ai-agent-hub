@@ -28,7 +28,7 @@ const ContractScannerAccess = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Start Quick Contract Risk Scanning Today
               </h2>
-              <p className="text-lg text-white/70 mb-8">
+              <p className="text-lg text-white/90 mb-8">
                 Join busy executives and business owners who use Maya AI for preliminary 
                 contract risk identification before consulting with their professional advisors.
               </p>
@@ -37,7 +37,7 @@ const ContractScannerAccess = () => {
                 {benefits.map((benefit) => (
                   <div key={benefit} className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0" />
-                    <span className="text-white/80">{benefit}</span>
+                    <span className="text-white/90">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -71,24 +71,24 @@ const ContractScannerAccess = () => {
                       <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-white/60 text-sm">Rated 4.9/5 by 134+ business professionals</p>
+                  <p className="text-white/70 text-sm">Rated 4.9/5 by 134+ business professionals</p>
                 </div>
                 
-                <blockquote className="text-white/80 text-center italic mb-6">
+                <blockquote className="text-white/90 text-center italic mb-6">
                   "Maya AI Contract Risk Scanner gives me the quick overview I need before 
-                  my legal consultations. It saves time and helps me ask better questions 
+                  my professional consultations. It saves time and helps me ask better questions 
                   during professional reviews."
                 </blockquote>
                 
                 <div className="text-center">
                   <p className="text-white font-medium">Sarah Chen</p>
-                  <p className="text-white/60 text-sm">Operations Director, TechCorp</p>
+                  <p className="text-white/70 text-sm">Operations Director, TechCorp</p>
                 </div>
                 
                 <div className="mt-6 bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-4">
-                  <p className="text-yellow-200 text-xs text-center">
+                  <p className="text-yellow-100 text-xs text-center">
                     <strong>Disclaimer:</strong> Tool provides preliminary risk identification only. 
-                    Not a substitute for professional legal advice.
+                    Not a substitute for professional advice.
                   </p>
                 </div>
               </CardContent>

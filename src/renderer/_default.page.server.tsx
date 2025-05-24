@@ -21,11 +21,8 @@ async function render(pageContext: PageContextServer) {
   )
 
   // See https://vite-plugin-ssr.com/head
-  const { documentHtml } = pageContext.exports
   const title = getTitle(pageContext)
   const desc = getDescription(pageContext)
-
-  const documentHtmlSafe = dangerouslySkipEscape(documentHtml || "")
 
   return escapeInject`<!DOCTYPE html>
     <html lang="en">
@@ -34,7 +31,6 @@ async function render(pageContext: PageContextServer) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${desc}" />
         <title>${title}</title>
-        ${documentHtmlSafe}
       </head>
       <body>
         <div id="root">${dangerouslySkipEscape(pageHtml)}</div>

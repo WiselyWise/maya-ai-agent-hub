@@ -1,7 +1,7 @@
 
 export { Page }
 
-import MemeGenerator from '@/pages/MemeGenerator'
+import MemeGenerator from '~/pages/MemeGenerator'
 
 function Page() {
   return <MemeGenerator />

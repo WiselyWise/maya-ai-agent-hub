@@ -1,7 +1,7 @@
 
 export { Page }
 
-import ViralPostGenerator from '@/pages/ViralPostGenerator'
+import ViralPostGenerator from '~/pages/ViralPostGenerator'
 
 function Page() {
   return <ViralPostGenerator />

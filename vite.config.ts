@@ -18,22 +18,20 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "~": path.resolve(__dirname, "./src"),
     },
   },
   build: {
-    // Improve chunking strategy for better caching
+    // Remove manual chunks configuration that conflicts with SSR
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          ui: [
-            '@/components/ui/button.tsx',
-            '@/components/ui/card.tsx',
-            '@/components/ui/dropdown-menu.tsx',
-            '@/components/ui/toast.tsx'
-          ]
-        }
+        // Only apply manual chunks for client build, not SSR
+        ...(process.env.VITE_SSR !== 'true' && {
+          manualChunks: {
+            vendor: ['react', 'react-dom'],
+            ui: ['lucide-react']
+          }
+        })
       }
     }
   }

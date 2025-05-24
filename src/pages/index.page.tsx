@@ -1,7 +1,7 @@
 
 export { Page }
 
-import Index from '@/pages/Index'
+import Index from '~/pages/Index'
 
 function Page() {
   return <Index />

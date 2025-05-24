@@ -1,7 +1,7 @@
 
 export { Page }
 
-import DocumentGenie from '@/pages/DocumentGenie'
+import DocumentGenie from '~/pages/DocumentGenie'
 
 function Page() {
   return <DocumentGenie />

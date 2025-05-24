@@ -1,7 +1,7 @@
 
 export { Page }
 
-import LeadGenie from '@/pages/LeadGenie'
+import LeadGenie from '~/pages/LeadGenie'
 
 function Page() {
   return <LeadGenie />

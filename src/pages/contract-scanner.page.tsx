@@ -1,7 +1,7 @@
 
 export { Page }
 
-import ContractScanner from '@/pages/ContractScanner'
+import ContractScanner from '~/pages/ContractScanner'
 
 function Page() {
   return <ContractScanner />

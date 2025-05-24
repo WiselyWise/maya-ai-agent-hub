@@ -1,7 +1,7 @@
 
 export { Page }
 
-import PromptGenius from '@/pages/PromptGenius'
+import PromptGenius from '~/pages/PromptGenius'
 
 function Page() {
   return <PromptGenius />

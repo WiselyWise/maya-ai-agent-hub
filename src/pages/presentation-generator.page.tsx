@@ -1,7 +1,7 @@
 
 export { Page }
 
-import PresentationGenerator from '@/pages/PresentationGenerator'
+import PresentationGenerator from '~/pages/PresentationGenerator'
 
 function Page() {
   return <PresentationGenerator />

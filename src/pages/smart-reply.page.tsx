@@ -1,7 +1,7 @@
 
 export { Page }
 
-import SmartReply from '@/pages/SmartReply'
+import SmartReply from '~/pages/SmartReply'
 
 function Page() {
   return <SmartReply />
